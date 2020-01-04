@@ -1,0 +1,103 @@
+/* banner属性 */
+.banner {
+    width   : 1000px;
+    margin  : 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-title {
+    width       : 130px;
+    padding-top : 10px;
+    padding-left: 40px;
+    position    : relative;
+    color       : rgba(15, 136, 235, 1);
+    font        : normal bold 32px "方正汉真广标-标准";
+    display     : inline-block;
+}
+
+.banner>.banner-button {
+    /* margin        : 8px; */
+    position         : relative;
+    float            : right;
+}
+
+.banner>.banner-button>.font-small {
+    margin-top      : 14px;
+    margin-right    : 8px;
+    padding         : 8px;
+    background-color: #FFFFFF;
+    border          : none 1px #000000;
+    text-align      : center;
+    font            : normal bold 20px "方正汉真广标-标准";
+    cursor          : pointer;
+    /*动画过渡的时间*/
+    transition-duration: 0.4s;
+    position           : relative;
+}
+
+.banner>.banner-button>.font-small:hover {
+    background-color: rgba(15, 136, 235, 1);
+    border          : 1px #FFFFFF;
+    color           : #FFFFFF;
+}
+
+.banner>.banner-bottom-line {
+    width     : 1000px;
+    height    : 2px;
+    margin    : 10px auto;
+    position  : relative;
+    border    : 2px solid rgba(15, 136, 235, 1);
+    background: rgba(15, 136, 235, 1);
+}
+
+
+/* 中间背景图片 */
+.image-main {
+    width   : 1000px;
+    height  : 450px;
+    position: relative;
+    margin  : 0px auto;
+}
+
+.image-main .image-main-img {
+    width : 1000px;
+    height: 450px;
+}
+
+
+/* 底部框架 */
+.index-bottom {
+    width           : 996px;
+    height          : 150px;
+    position        : relative;
+    margin          : 20px auto;
+    overflow        : hidden;
+    background-color: #FFFFFF;
+    border          : 2px solid rgba(15, 136, 235, 1);
+    text-align      : center;
+}
+
+.index-bottom .index-bottom-inf {
+    width     : 300px;
+    position  : relative;
+    display   : inline-block;
+    margin-top: 20px;
+}
+
+.index-bottom .index-bottom-img {
+    position: relative;
+    width   : 50px;
+    height  : 50px;
+}
+
+.index-bottom .index-bottom-title-up {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: Arial;
+}
+
+.index-bottom .index-bottom-title-bottom {
+    font-size: 16px;
+    font-style: Georgia;
+}

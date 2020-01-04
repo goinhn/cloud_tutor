@@ -1,0 +1,128 @@
+/* 上方banner属性 */
+.banner {
+    width   : 1000px;
+    margin  : 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* banner标题 */
+.banner-title {
+    width       : 130px;
+    padding-top : 10px;
+    padding-left: 40px;
+    position    : relative;
+    color       : rgba(15, 136, 235, 1);
+    font        : normal bold 32px "方正汉真广标-标准";
+    display     : inline-block;
+}
+
+/* banner右侧按钮 */
+.banner>.banner-button {
+    position: relative;
+    float   : right;
+}
+
+/* banner按钮内的字体 */
+.banner>.banner-button>.font-small {
+    margin-top      : 14px;
+    margin-right    : 8px;
+    padding         : 8px;
+    background-color: #FFFFFF;
+    border          : none 1px #000000;
+    text-align      : center;
+    font            : normal bold 20px "方正汉真广标-标准";
+    cursor          : pointer;
+    /*动画过渡的时间*/
+    transition-duration: 0.4s;
+    position           : relative;
+}
+
+/* banner按钮鼠标悬浮属性 */
+.banner>.banner-button>.font-small:hover {
+    background-color: rgba(15, 136, 235, 1);
+    border          : 1px #FFFFFF;
+    color           : #FFFFFF;
+}
+
+/* banner底部分割线 */
+.banner>.banner-bottom-line {
+    width     : 1000px;
+    height    : 2px;
+    margin    : 10px auto;
+    position  : relative;
+    border    : 2px solid rgba(15, 136, 235, 1);
+    background: rgba(15, 136, 235, 1);
+}
+
+
+
+/* 登录模块 */
+.login {
+    position: relative;
+    margin  : 150px auto;
+    border  : 1px solid rgba(15, 136, 235, 1);
+    width   : 500px;
+    overflow: hidden;
+}
+
+/* 登录标题 */
+.login .login-title {
+    position    : relative;
+    margin      : 20px auto 5px;
+    padding-left: 30px;
+    width       : 200px;
+    font        : bold 16px YouYuan;
+    display     : block;
+}
+
+/* 登录输入框 */
+.login .login-input {
+    position  : relative;
+    margin    : 0px auto 5px;
+    width     : 200px;
+    text-align: center;
+}
+
+.login .forget-remember {
+    position: relative;
+    margin  : 20px auto;
+    width   : 200px;
+    overflow: hidden;
+}
+
+.login .login-forget {
+    position: relative;
+    float   : left;
+}
+
+.login .login-remember {
+    position: relative;
+    float   : right;
+}
+
+/* 登录提交模块 */
+.login .login-submit {
+    position  : relative;
+    margin    : 20px auto;
+    width     : 200px;
+    text-align: center;
+}
+
+.login .login-submit-button {
+    width         : 122px;
+    height        : 32px;
+    border        : none;
+    padding-bottom: 2px;
+    font-size     : 14px #000000;
+    font-weight   : bold;
+    cursor        : pointer;
+    /*动画过渡的时间*/
+    transition-duration: 0.4s;
+}
+
+.login .login-submit-button:hover {
+    background-color: #6192c8;
+    color           : #FFFFFF;
+    opacity         : 0.8;
+}

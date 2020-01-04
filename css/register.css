@@ -1,0 +1,103 @@
+.banner {
+    width   : 1000px;
+    margin  : 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-title {
+    width       : 130px;
+    padding-top : 10px;
+    padding-left: 40px;
+    position    : relative;
+    color       : rgba(15, 136, 235, 1);
+    font        : normal bold 32px "方正汉真广标-标准";
+    display     : inline-block;
+}
+
+.banner>.banner-button {
+    /* margin        : 8px; */
+    position         : relative;
+    float            : right;
+}
+
+.banner>.banner-button>.font-small {
+    margin-top      : 14px;
+    margin-right    : 8px;
+    padding         : 8px;
+    background-color: #FFFFFF;
+    border          : none 1px #000000;
+    text-align      : center;
+    font            : normal bold 20px "方正汉真广标-标准";
+    cursor          : pointer;
+    /*动画过渡的时间*/
+    transition-duration: 0.4s;
+    position           : relative;
+}
+
+.banner>.banner-button>.font-small:hover {
+    background-color: rgba(15, 136, 235, 1);
+    border          : 1px #FFFFFF;
+    color           : #FFFFFF;
+}
+
+.banner>.banner-bottom-line {
+    width     : 1000px;
+    height    : 2px;
+    margin    : 10px auto;
+    position  : relative;
+    border    : 2px solid rgba(15, 136, 235, 1);
+    background: rgba(15, 136, 235, 1);
+}
+
+
+/* 注册模块 */
+.register {
+    position: relative;
+    margin  : 90px auto;
+    border  : 1px solid rgba(15, 136, 235, 1);
+    width   : 500px;
+    overflow: hidden;
+}
+
+.register .register-title {
+    position    : relative;
+    margin      : 20px auto 5px;
+    padding-left: 30px;
+    width       : 200px;
+    font        : bold 16px YouYuan;
+    display     : block;
+}
+
+.register .register-input {
+    position  : relative;
+    margin    : 0px auto 5px;
+    width     : 200px;
+    text-align: center;
+}
+
+/* 登录提交模块 */
+.register .register-submit {
+    position  : relative;
+    margin    : 20px auto;
+    width     : 200px;
+    text-align: center;
+}
+
+.register .register-submit-button {
+    width         : 122px;
+    height        : 32px;
+    border        : none;
+    padding-bottom: 2px;
+    font-size     : 14px #000000;
+    font-weight   : bold;
+    cursor        : pointer;
+    /*动画过渡的时间*/
+    transition-duration: 0.4s;
+}
+
+.register .register-submit-button:hover {
+    background-color: #6192c8;
+    color           : #FFFFFF;
+    opacity         : 0.8;
+}

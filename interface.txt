@@ -1,0 +1,17 @@
+页面跳转：
+首页：index
+登录：login
+注册：register
+详细信息：details
+家教信息：tutorInformation
+招聘信息：recruitment
+
+页面请求:
+首页：PostIndex
+登录：PostLogin
+注册：PostRegister
+详细信息：PostDetails
+家教信息：PostTutorInformation
+招聘信息：PostRecruitment
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/register.css" />
+    <title>注册</title>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="banner-title">云家教</div>
+        <div class="banner-button">
+            <button class="font-small" id="buttonIndex" style="vertical-align:middle" onclick="index">首页</button>
+            <button class="font-small" id="buttonRecruitment" style="vertical-align:middle"
+                onclick="recruitment">家教招聘</button>
+            <button class="font-small" id="buttonTutorInformation" style="vertical-align:middle"
+                onclick="tutorInformation">家教信息</button>
+            <button class="font-small" id="buttonregister" style="vertical-align:middle" onclick="register">登录</button>
+            <button class="font-small" id="buttonRegister" style="vertical-align:middle" onclick="register">注册</button>
+        </div>
+        <div class="banner-bottom-line"></div>
+    </div>
+
+
+    <div class="register">
+        <label class="register-title" for="id">账号</label>
+        <div class=register-input>
+            <input type="text" name="id" id="user_id" placeholder="请输入账号"
+                onfocus="accountCheckFocus()" onblur="accountCheckBlur()">
+        </div>
+
+        <label class="register-title" for="name">昵称</label>
+        <div class="register-input">
+            <input type="text" name="name" id="user_name" placeholder="请输入昵称"
+                onfocus="nameCheckFocus()" onblur="nameCheckBlur()">
+        </div>
+
+        <label class="register-title" for="password">密码</label>
+        <div class="register-input">
+            <input type="password" name="password" id="user_password" placeholder="请输入密码"
+                onfocus="passwordCheckFocus()" onblur="passwordCheckBlur()">
+        </div>
+
+        <label class="register-title" for="re_password">确认密码</label>
+        <div class="register-input">
+            <input type="password" name="re_password" id="user_re_password" placeholder="请确认密码"
+                onfocus="rePasswordCheckFocus()" onblur="rePasswordCheckBlur()">
+        </div>
+
+        <div class="register-submit">
+            <input type="submit" class="register-submit-button" name="register_button" id="register_submit" value="register">
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="../js/register.js"></script>
+
+</html>
