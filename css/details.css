@@ -1,74 +1,97 @@
-.bottom{
-    margin:0 auto;
-    width: 1280px;
-    height: 680px;    position: relative;
-    background-color: rgba(255, 255, 255, 1);
-    z-index:-10;
-}
-
-.topBack{
-    margin: 0 40px;
-    width: 1200px;
-    height: 168px;
+/* banner属性 */
+.banner {
+    width   : 1000px;
+    margin  : 10px auto;
     position: relative;
-    line-height: 20px;
-    background-color: rgba(222, 215, 215, 1);
-    text-align: center;
-    border: 1px solid rgba(222, 215, 215, 1);
-    z-index:-9;
+    overflow: hidden;
 }
 
-.teacherImage{
-    left: 58px;
-    top: 27px;
-    width: 200px;
-    height: 257px;
-    position:absolute;
+.banner-title {
+    width       : 130px;
+    padding-top : 10px;
+    padding-left: 40px;
+    position    : relative;
+    color       : rgba(15, 136, 235, 1);
+    font        : normal bold 32px "方正汉真广标-标准";
+    display     : inline-block;
 }
 
-.name{
-    left: 330px;
-    top: 30px;
-    width: 83px;
-    height: 28px;
-    position: absolute;
-    color: rgba(16, 16, 16, 1);
-    font-size: 28px;
-    text-align: left;
-    font-family: SourceHanSansSC-regular;
+.banner>.banner-button {
+    /* margin        : 8px; */
+    position         : relative;
+    float            : right;
 }
 
+.banner>.banner-button>.font-small {
+    margin-top      : 14px;
+    margin-right    : 8px;
+    padding         : 8px;
+    background-color: #FFFFFF;
+    border          : none 1px #000000;
+    text-align      : center;
+    font            : normal bold 20px "方正汉真广标-标准";
+    cursor          : pointer;
+    /*动画过渡的时间*/
+    transition-duration: 0.4s;
+    position           : relative;
+}
 
-.topBlock{
-    left: 500px;
-    top: 38px;
-    width: 129px;
-    height: 42px;
-    position:absolute;
-    line-height: 20px;
-    opacity: 0.52;
-    border-radius: 33px;
+.banner>.banner-button>.font-small:hover {
     background-color: rgba(15, 136, 235, 1);
+    border          : 1px #FFFFFF;
+    color           : #FFFFFF;
+}
+
+.banner>.banner-bottom-line {
+    width     : 1000px;
+    height    : 2px;
+    margin    : 10px auto;
+    position  : relative;
+    border    : 2px solid rgba(15, 136, 235, 1);
+    background: rgba(15, 136, 235, 1);
+}
+
+
+/* 详细内容信息 */
+.bottom{
+    width: 1000px;
+    position: relative;
+    margin:0 auto;
+}
+
+.bottom .top-back{
+    width: 1000px;
+    height: 150px;
+    position: relative;
+    margin: 0px auto;
+    background-color: rgba(222, 215, 215, 1);
+}
+
+.bottom .top-back .teacher-image{
+    width: 150px;
+    height: 192.75px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.bottom .top-back .teacher-name{
+    width: 129px;
+    height: 40px;
+    position: relative;
+    float: left;
+    margin-left: 40px;
+    margin-top: 40px;
+    opacity: 0.52;
+    background-color: rgb(1, 153, 255);
     text-align: center;
-    border: 1px solid rgba(187, 187, 187, 1);
-    z-index:-8;
+    line-height: 40px;     /* 设置文字的行高和框相同设置水平居中 */
+    color: #FFFFFF;
+    font-size: 20px;
 }
 
-
-.topFont{
-    left: 530px;
-    top: 49px;
-    width: 72px;
-    height: 36px;
-    position:absolute;
-    color: rgba(255, 255, 255, 1);
-    font-size: 24px;
-    text-align: left;
-    font-family: SourceHanSansSC-regular;
-}
-
-
-.topFontBlock{
+.bottom .top-back .teacher-button{
     left: 960px;
     top: 50px;
     width: 96px;
@@ -80,7 +103,7 @@
     font-family: Roboto-regular;
 }
 
-.topNumber{
+.bottom .top-back .teacher-block{
     left: 1045px;
     top: 50px;
     width: 44px;
@@ -91,6 +114,26 @@
     text-align: left;
     font-family: SourceHanSansSC-regular;
 }
+
+.bottom .top-back .teacher-inf{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .title{
