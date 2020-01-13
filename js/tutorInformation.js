@@ -1,41 +1,88 @@
-var information1=new Vue({
-    el:'#information1',
-    data:{
-        name:"林xx"
-    }
-})
+window.onload = function(){
 
-var information2=new Vue({
-    el:'#information2',
-    data:{
-        school:"杭州电子科技大学"
-    }
-})
+}
 
-var information3=new Vue({
-    el:'#information3',
-    data:{
-        experience:"一年"
-    }
-})
 
-var information4=new Vue({
-    el:'#information4',
-    data:{
-        subject:"小学英语"
-    }
-})
+function index(){
+    let url = '=====';
+    ajax['get'](url, function(){
 
-var information5=new Vue({
-    el:'#information5',
-    data:{
-        classFee:"50/小时（可免费试讲）"
+    });
+}
+
+function recruitment(){
+    let url = '=====';
+    ajax['get'](url, function(){
+
+    });
+}
+
+function tutorInformation(){
+    let url = '=====';
+    ajax['get'](url, function(){
+
+    });
+}
+function login(){
+    let url = '=====';
+    ajax['get'](url, function(){
+
+    });
+}
+
+function register(){
+    let url = '=====';
+    ajax['get'](url, function(){
+
+    });
+}
+
+
+var ajax = {
+    get: function (url, fn) {
+        let xhr;
+        if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest();
+        } else {
+            xhr = new ActiveXObject('Microsoft.XMLHTTP');
+        }
+
+        xhr.open('GET', url, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200 | xhr.status == 304) {
+                    console.log(xhr.responseText);
+                    fn.call(this, xhr.responseText);
+                } else {
+                    console.log(xhr.status);
+                }
+            } else {
+                console.log(xhr.readyState);
+            }
+        }
+        xhr.send(null);
+    },
+
+    post: function (url, data, fn) {
+        let xhr;
+        if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest();
+        } else {
+            xhr = new ActiveXObject('Microsoft.XMLHTTP');
+        }
+
+        xhr.open('POST', url, true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 400) {
+                if (xhr.status == 200 | xhr.status == 304) {
+                    console.log(xhr.responseText);
+                    fn.call(this, xhr.responseText);
+                }
+            }
+        }
+        xhr.send(data);
     }
-})
-    
-var information6=new Vue({
-    el:'#information6',
-    data:{
-        introduction:"高考英语145分，大学英语四六级优秀。为人耐心开朗，有责任感"
-    }
-})
+}
+
+

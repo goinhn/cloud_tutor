@@ -1,240 +1,1140 @@
-/* banner属性 */
-.banner {
-    width   : 1000px;
-    margin  : 10px auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.banner-title {
-    width       : 130px;
-    padding-top : 10px;
-    padding-left: 40px;
-    position    : relative;
-    color       : rgba(15, 136, 235, 1);
-    font        : normal bold 32px "方正汉真广标-标准";
-    display     : inline-block;
-}
-
-.banner>.banner-button {
-    /* margin        : 8px; */
-    position         : relative;
-    float            : right;
-}
-
-.banner>.banner-button>.font-small {
-    margin-top      : 14px;
-    margin-right    : 8px;
-    padding         : 8px;
-    background-color: #FFFFFF;
-    border          : none 1px #000000;
-    text-align      : center;
-    font            : normal bold 20px "方正汉真广标-标准";
-    cursor          : pointer;
-    /*动画过渡的时间*/
-    transition-duration: 0.4s;
-    position           : relative;
-}
-
-.banner>.banner-button>.font-small:hover {
-    background-color: rgba(15, 136, 235, 1);
-    border          : 1px #FFFFFF;
-    color           : #FFFFFF;
-}
-
-.banner>.banner-bottom-line {
-    width     : 1000px;
-    height    : 2px;
-    margin    : 10px auto;
-    position  : relative;
-    border    : 2px solid rgba(15, 136, 235, 1);
-    background: rgba(15, 136, 235, 1);
-}
-
-
-/* 详细内容信息 */
-.bottom{
-    width: 1000px;
-    position: relative;
-    margin:0 auto;
-}
-
-.bottom .top-back{
-    width: 1000px;
-    height: 150px;
-    position: relative;
-    margin: 0px auto;
-    background-color: rgba(222, 215, 215, 1);
-}
-
-.bottom .top-back .teacher-image{
-    width: 150px;
-    height: 192.75px;
-    position: relative;
-    float: left;
-    margin-left: 30px;
-    margin-top: 40px;
-}
-
-.bottom .top-back .teacher-name{
-    width: 129px;
-    height: 40px;
-    position: relative;
-    float: left;
-    margin-left: 40px;
-    margin-top: 40px;
-    opacity: 0.52;
-    background-color: rgb(1, 153, 255);
-    text-align: center;
-    line-height: 40px;     /* 设置文字的行高和框相同设置水平居中 */
-    color: #FFFFFF;
-    font-size: 20px;
-}
-
-.bottom .top-back .teacher-button{
-    left: 960px;
-    top: 50px;
-    width: 96px;
-    height: 9px;
-    position: absolute;
-    color: rgba(15, 136, 235, 1);
-    font-size: 24px;
-    text-align: left;
-    font-family: Roboto-regular;
-}
-
-.bottom .top-back .teacher-block{
-    left: 1045px;
-    top: 50px;
-    width: 44px;
-    height: 36px;
-    position:absolute;
-    color: rgba(16, 16, 16, 1);
-    font-size: 20px;
-    text-align: left;
-    font-family: SourceHanSansSC-regular;
-}
-
-.bottom .top-back .teacher-inf{
-
+body {
+    background-image : url("../asserts/back_main.png");
+    background-repeat: repeat;
 }
 
 
 
+@media screen and (min-width: 1600px) {
+
+    /* =========== 顶部的banner属性 =========== */
+    .banner {
+        position: relative;
+        width   : 1000px;
+        margin  : 10px auto;
+    }
+
+    .clearfix:after,
+    .clearfix:before {
+        display: table;
+        content: "";
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .banner-title {
+        position: relative;
+        display : inline-block;
+        width   : 130px;
+        padding : 10px 0 0 40px;
+        color   : rgba(15, 136, 235, 1);
+        font    : normal bold 32px "方正汉真广标-标准";
+    }
+
+    .banner>.banner-button {
+        position: relative;
+        float   : right;
+    }
+
+    .banner>.banner-button>.font-small {
+        position                   : relative;
+        margin                     : 14px 8px 0 0;
+        padding                    : 8px;
+        background-color           : rgba(255, 255, 255, 1);
+        border                     : 1px none rgba(0, 0, 0, 1);
+        cursor                     : pointer;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration   : 0.4s;
+        -o-transition-duration     : 0.4s;
+        transition-duration        : 0.4s;
+        text-align                 : center;
+        font                       : normal bold 20px "方正汉真广标-标准";
+    }
+
+    .banner>.banner-button>.font-small:hover {
+        background-color: rgba(15, 136, 235, 1);
+        border          : 1px normal rgba(255, 255, 255, 1);
+        color           : rgba(255, 255, 255, 1);
+    }
+
+    .banner>.banner-bottom-line {
+        position  : relative;
+        width     : 1000px;
+        height    : 2px;
+        margin    : 10px auto;
+        border    : 2px solid rgba(15, 136, 235, 1);
+        background: rgba(15, 136, 235, 1);
+    }
 
 
+    /* ========== bottom内部详细的信息 ========== */
+    .bottom {
+        position: relative;
+        width   : 1000px;
+        margin  : 0 auto;
+    }
 
+    .bottom .top-back {
+        position        : relative;
+        width           : 1000px;
+        height          : 150px;
+        margin          : 0px auto;
+        background-color: rgba(222, 215, 215, 1);
+    }
 
+    .bottom .top-back .teacher-image {
+        position: relative;
+        float   : left;
+        width   : 150px;
+        height  : 192.75px;
+        margin  : 40px 0 0 30px;
+    }
 
+    .bottom .top-back .teacher-name {
+        position        : relative;
+        float           : left;
+        width           : 129px;
+        height          : 40px;
+        margin          : 40px 0 0 40px;
+        background-color: rgb(1, 153, 255, 0.52);
+        text-align      : center;
+        color           : rgba(255, 255, 255, 1);
+        font            : normal 20px/40px Arila;
+    }
 
+    .bottom .top-back .teacher-button {
+        position                          : relative;
+        float                             : left;
+        width                             : 129px;
+        height                            : 40px;
+        margin                            : 40px 0 0 40px;
+        text-align                        : center;
+        border                            : none;
+        cursor                            : pointer;
+        -webkit-transition-duration       : 0.4s;
+        -moz-transition-duration          : 0.4s;
+        -o-transition-duration            : 0.4s;
+        transition-duration               : 0.4s;
+        -webkit-transition-delay          : 0.1s;
+        -moz-transition-delay             : 0.1s;
+        -o-transition-delay               : 0.1s;
+        transition-delay                  : 0.1s;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-timing-function   : ease;
+        -o-transition-timing-function     : ease;
+        transition-timing-function        : ease;
+        color                             : rgba(0, 0, 0, 1);
+        font                              : normal bold 16px/40px Arial;
+    }
 
+    .bottom .top-back .teacher-button:hover {
+        background-color: rgba(97, 146, 200, 1);
+        color           : rgba(255, 255, 255, 1);
+        opacity         : 0.8;
+    }
 
+    .bottom .top-back .teacher-inf {
+        position  : relative;
+        float     : right;
+        width     : 80px;
+        height    : 40px;
+        margin    : 40px 20px 0 0;
+        color     : rgba(0, 0, 0, 1);
+        text-align: center;
+        font      : normal normal 20px Arial;
+    }
 
+    .bottom .top-back .teacher-block {
+        position   : relative;
+        float      : right;
+        width      : 80px;
+        height     : 40px;
+        margin     : 40px 0 0 0;
+        color      : rgba(0, 0, 0, 1);
+        text-align : center;
+        font-family: normal normal 20px SourceHanSansSC-regular;
+    }
 
+    .inf {
+        position: relative;
+        width   : 1000px;
 
+        margin: 20px auto;
+    }
 
+    .inf .inf-block {
+        position: relative;
+        width   : 800px;
 
+        margin: 0 0 0 200px;
+    }
 
+    .inf .inf-block .title {
+        position  : relative;
+        display   : inline-block;
+        width     : 150px;
+        height    : 45px;
+        color     : rgba(147, 138, 138, 1);
+        text-align: right;
+        font      : normal normal 26px/45px SourceHanSansSC-regular;
+    }
 
-.title{
-    left: 380px;
-    width: 130px;
-    height: 45px;
-    position: absolute;
-    color: rgba(147, 138, 138, 1);
-    font-size: 26px;
-    text-align: left;
-    font-family: SourceHanSansSC-regular;
+    .inf .inf-block .content {
+        position: relative;
+        display : inline-block;
+        margin  : 0 0 0 20px;
+    }
 }
 
 
-#title1{
-    top:200px;
+
+
+@media screen and (max-width: 1599px) and (min-width: 1280px) {
+
+    /* =========== 顶部的banner属性 =========== */
+    .banner {
+        position: relative;
+        width   : 1000px;
+        margin  : 10px auto;
+    }
+
+    .clearfix:after,
+    .clearfix:before {
+        display: table;
+        content: "";
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .banner-title {
+        position: relative;
+        display : inline-block;
+        width   : 130px;
+        padding : 10px 0 0 40px;
+        color   : rgba(15, 136, 235, 1);
+        font    : normal bold 32px "方正汉真广标-标准";
+    }
+
+    .banner>.banner-button {
+        position: relative;
+        float   : right;
+    }
+
+    .banner>.banner-button>.font-small {
+        position                   : relative;
+        margin                     : 14px 8px 0 0;
+        padding                    : 8px;
+        background-color           : rgba(255, 255, 255, 1);
+        border                     : 1px none rgba(0, 0, 0, 1);
+        cursor                     : pointer;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration   : 0.4s;
+        -o-transition-duration     : 0.4s;
+        transition-duration        : 0.4s;
+        text-align                 : center;
+        font                       : normal bold 20px "方正汉真广标-标准";
+    }
+
+    .banner>.banner-button>.font-small:hover {
+        background-color: rgba(15, 136, 235, 1);
+        border          : 1px normal rgba(255, 255, 255, 1);
+        color           : rgba(255, 255, 255, 1);
+    }
+
+    .banner>.banner-bottom-line {
+        position  : relative;
+        width     : 1000px;
+        height    : 2px;
+        margin    : 10px auto;
+        border    : 2px solid rgba(15, 136, 235, 1);
+        background: rgba(15, 136, 235, 1);
+    }
+
+
+    /* ========== bottom内部详细的信息 ========== */
+    .bottom {
+        position: relative;
+        width   : 1000px;
+        margin  : 0 auto;
+    }
+
+    .bottom .top-back {
+        position        : relative;
+        width           : 1000px;
+        height          : 150px;
+        margin          : 0px auto;
+        background-color: rgba(222, 215, 215, 1);
+    }
+
+    .bottom .top-back .teacher-image {
+        position: relative;
+        float   : left;
+        width   : 150px;
+        height  : 192.75px;
+        margin  : 40px 0 0 30px;
+    }
+
+    .bottom .top-back .teacher-name {
+        position        : relative;
+        float           : left;
+        width           : 129px;
+        height          : 40px;
+        margin          : 40px 0 0 40px;
+        background-color: rgb(1, 153, 255, 0.52);
+        text-align      : center;
+        color           : rgba(255, 255, 255, 1);
+        font            : normal 20px/40px Arila;
+    }
+
+    .bottom .top-back .teacher-button {
+        position                          : relative;
+        float                             : left;
+        width                             : 129px;
+        height                            : 40px;
+        margin                            : 40px 0 0 40px;
+        text-align                        : center;
+        border                            : none;
+        cursor                            : pointer;
+        -webkit-transition-duration       : 0.4s;
+        -moz-transition-duration          : 0.4s;
+        -o-transition-duration            : 0.4s;
+        transition-duration               : 0.4s;
+        -webkit-transition-delay          : 0.1s;
+        -moz-transition-delay             : 0.1s;
+        -o-transition-delay               : 0.1s;
+        transition-delay                  : 0.1s;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-timing-function   : ease;
+        -o-transition-timing-function     : ease;
+        transition-timing-function        : ease;
+        color                             : rgba(0, 0, 0, 1);
+        font                              : normal bold 16px/40px Arial;
+    }
+
+    .bottom .top-back .teacher-button:hover {
+        background-color: rgba(97, 146, 200, 1);
+        color           : rgba(255, 255, 255, 1);
+        opacity         : 0.8;
+    }
+
+    .bottom .top-back .teacher-inf {
+        position  : relative;
+        float     : right;
+        width     : 80px;
+        height    : 40px;
+        margin    : 40px 20px 0 0;
+        color     : rgba(0, 0, 0, 1);
+        text-align: center;
+        font      : normal normal 20px Arial;
+    }
+
+    .bottom .top-back .teacher-block {
+        position   : relative;
+        float      : right;
+        width      : 80px;
+        height     : 40px;
+        margin     : 40px 0 0 0;
+        color      : rgba(0, 0, 0, 1);
+        text-align : center;
+        font-family: normal normal 20px SourceHanSansSC-regular;
+    }
+
+    .inf {
+        position: relative;
+        width   : 1000px;
+
+        margin: 20px auto;
+    }
+
+    .inf .inf-block {
+        position: relative;
+        width   : 800px;
+
+        margin: 0 0 0 200px;
+    }
+
+    .inf .inf-block .title {
+        position  : relative;
+        display   : inline-block;
+        width     : 150px;
+        height    : 45px;
+        color     : rgba(147, 138, 138, 1);
+        text-align: right;
+        font      : normal normal 26px/45px SourceHanSansSC-regular;
+    }
+
+    .inf .inf-block .content {
+        position: relative;
+        display : inline-block;
+        margin  : 0 0 0 20px;
+    }
 }
 
-#title2{
-    top:250px;
+
+
+@media screen and (max-width: 1279px) and (min-width: 960px) {
+
+    /* =========== 顶部的banner属性 =========== */
+    .banner {
+        position: relative;
+        width   : 1000px;
+        margin  : 10px auto;
+    }
+
+    .clearfix:after,
+    .clearfix:before {
+        display: table;
+        content: "";
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .banner-title {
+        position: relative;
+        display : inline-block;
+        width   : 130px;
+        padding : 10px 0 0 40px;
+        color   : rgba(15, 136, 235, 1);
+        font    : normal bold 32px "方正汉真广标-标准";
+    }
+
+    .banner>.banner-button {
+        position: relative;
+        float   : right;
+    }
+
+    .banner>.banner-button>.font-small {
+        position                   : relative;
+        margin                     : 14px 8px 0 0;
+        padding                    : 8px;
+        background-color           : rgba(255, 255, 255, 1);
+        border                     : 1px none rgba(0, 0, 0, 1);
+        cursor                     : pointer;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration   : 0.4s;
+        -o-transition-duration     : 0.4s;
+        transition-duration        : 0.4s;
+        text-align                 : center;
+        font                       : normal bold 20px "方正汉真广标-标准";
+    }
+
+    .banner>.banner-button>.font-small:hover {
+        background-color: rgba(15, 136, 235, 1);
+        border          : 1px normal rgba(255, 255, 255, 1);
+        color           : rgba(255, 255, 255, 1);
+    }
+
+    .banner>.banner-bottom-line {
+        position  : relative;
+        width     : 1000px;
+        height    : 2px;
+        margin    : 10px auto;
+        border    : 2px solid rgba(15, 136, 235, 1);
+        background: rgba(15, 136, 235, 1);
+    }
+
+
+    /* ========== bottom内部详细的信息 ========== */
+    .bottom {
+        position: relative;
+        width   : 1000px;
+        margin  : 0 auto;
+    }
+
+    .bottom .top-back {
+        position        : relative;
+        width           : 1000px;
+        height          : 150px;
+        margin          : 0px auto;
+        background-color: rgba(222, 215, 215, 1);
+    }
+
+    .bottom .top-back .teacher-image {
+        position: relative;
+        float   : left;
+        width   : 150px;
+        height  : 192.75px;
+        margin  : 40px 0 0 30px;
+    }
+
+    .bottom .top-back .teacher-name {
+        position        : relative;
+        float           : left;
+        width           : 129px;
+        height          : 40px;
+        margin          : 40px 0 0 40px;
+        background-color: rgb(1, 153, 255, 0.52);
+        text-align      : center;
+        color           : rgba(255, 255, 255, 1);
+        font            : normal 20px/40px Arila;
+    }
+
+    .bottom .top-back .teacher-button {
+        position                          : relative;
+        float                             : left;
+        width                             : 129px;
+        height                            : 40px;
+        margin                            : 40px 0 0 40px;
+        text-align                        : center;
+        border                            : none;
+        cursor                            : pointer;
+        -webkit-transition-duration       : 0.4s;
+        -moz-transition-duration          : 0.4s;
+        -o-transition-duration            : 0.4s;
+        transition-duration               : 0.4s;
+        -webkit-transition-delay          : 0.1s;
+        -moz-transition-delay             : 0.1s;
+        -o-transition-delay               : 0.1s;
+        transition-delay                  : 0.1s;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-timing-function   : ease;
+        -o-transition-timing-function     : ease;
+        transition-timing-function        : ease;
+        color                             : rgba(0, 0, 0, 1);
+        font                              : normal bold 16px/40px Arial;
+    }
+
+    .bottom .top-back .teacher-button:hover {
+        background-color: rgba(97, 146, 200, 1);
+        color           : rgba(255, 255, 255, 1);
+        opacity         : 0.8;
+    }
+
+    .bottom .top-back .teacher-inf {
+        position  : relative;
+        float     : right;
+        width     : 80px;
+        height    : 40px;
+        margin    : 40px 20px 0 0;
+        color     : rgba(0, 0, 0, 1);
+        text-align: center;
+        font      : normal normal 20px Arial;
+    }
+
+    .bottom .top-back .teacher-block {
+        position   : relative;
+        float      : right;
+        width      : 80px;
+        height     : 40px;
+        margin     : 40px 0 0 0;
+        color      : rgba(0, 0, 0, 1);
+        text-align : center;
+        font-family: normal normal 20px SourceHanSansSC-regular;
+    }
+
+    .inf {
+        position: relative;
+        width   : 1000px;
+
+        margin: 20px auto;
+    }
+
+    .inf .inf-block {
+        position: relative;
+        width   : 800px;
+
+        margin: 0 0 0 200px;
+    }
+
+    .inf .inf-block .title {
+        position  : relative;
+        display   : inline-block;
+        width     : 150px;
+        height    : 45px;
+        color     : rgba(147, 138, 138, 1);
+        text-align: right;
+        font      : normal normal 26px/45px SourceHanSansSC-regular;
+    }
+
+    .inf .inf-block .content {
+        position: relative;
+        display : inline-block;
+        margin  : 0 0 0 20px;
+    }
 }
 
-#title3{
-    top:300px;
+
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+
+    /* =========== 顶部的banner属性 =========== */
+    .banner {
+        position: relative;
+        width   : 1000px;
+        margin  : 10px auto;
+    }
+
+    .clearfix:after,
+    .clearfix:before {
+        display: table;
+        content: "";
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .banner-title {
+        position: relative;
+        display : inline-block;
+        width   : 130px;
+        padding : 10px 0 0 40px;
+        color   : rgba(15, 136, 235, 1);
+        font    : normal bold 32px "方正汉真广标-标准";
+    }
+
+    .banner>.banner-button {
+        position: relative;
+        float   : right;
+    }
+
+    .banner>.banner-button>.font-small {
+        position                   : relative;
+        margin                     : 14px 8px 0 0;
+        padding                    : 8px;
+        background-color           : rgba(255, 255, 255, 1);
+        border                     : 1px none rgba(0, 0, 0, 1);
+        cursor                     : pointer;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration   : 0.4s;
+        -o-transition-duration     : 0.4s;
+        transition-duration        : 0.4s;
+        text-align                 : center;
+        font                       : normal bold 20px "方正汉真广标-标准";
+    }
+
+    .banner>.banner-button>.font-small:hover {
+        background-color: rgba(15, 136, 235, 1);
+        border          : 1px normal rgba(255, 255, 255, 1);
+        color           : rgba(255, 255, 255, 1);
+    }
+
+    .banner>.banner-bottom-line {
+        position  : relative;
+        width     : 1000px;
+        height    : 2px;
+        margin    : 10px auto;
+        border    : 2px solid rgba(15, 136, 235, 1);
+        background: rgba(15, 136, 235, 1);
+    }
+
+
+    /* ========== bottom内部详细的信息 ========== */
+    .bottom {
+        position: relative;
+        width   : 1000px;
+        margin  : 0 auto;
+    }
+
+    .bottom .top-back {
+        position        : relative;
+        width           : 1000px;
+        height          : 150px;
+        margin          : 0px auto;
+        background-color: rgba(222, 215, 215, 1);
+    }
+
+    .bottom .top-back .teacher-image {
+        position: relative;
+        float   : left;
+        width   : 150px;
+        height  : 192.75px;
+        margin  : 40px 0 0 30px;
+    }
+
+    .bottom .top-back .teacher-name {
+        position        : relative;
+        float           : left;
+        width           : 129px;
+        height          : 40px;
+        margin          : 40px 0 0 40px;
+        background-color: rgb(1, 153, 255, 0.52);
+        text-align      : center;
+        color           : rgba(255, 255, 255, 1);
+        font            : normal 20px/40px Arila;
+    }
+
+    .bottom .top-back .teacher-button {
+        position                          : relative;
+        float                             : left;
+        width                             : 129px;
+        height                            : 40px;
+        margin                            : 40px 0 0 40px;
+        text-align                        : center;
+        border                            : none;
+        cursor                            : pointer;
+        -webkit-transition-duration       : 0.4s;
+        -moz-transition-duration          : 0.4s;
+        -o-transition-duration            : 0.4s;
+        transition-duration               : 0.4s;
+        -webkit-transition-delay          : 0.1s;
+        -moz-transition-delay             : 0.1s;
+        -o-transition-delay               : 0.1s;
+        transition-delay                  : 0.1s;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-timing-function   : ease;
+        -o-transition-timing-function     : ease;
+        transition-timing-function        : ease;
+        color                             : rgba(0, 0, 0, 1);
+        font                              : normal bold 16px/40px Arial;
+    }
+
+    .bottom .top-back .teacher-button:hover {
+        background-color: rgba(97, 146, 200, 1);
+        color           : rgba(255, 255, 255, 1);
+        opacity         : 0.8;
+    }
+
+    .bottom .top-back .teacher-inf {
+        position  : relative;
+        float     : right;
+        width     : 80px;
+        height    : 40px;
+        margin    : 40px 20px 0 0;
+        color     : rgba(0, 0, 0, 1);
+        text-align: center;
+        font      : normal normal 20px Arial;
+    }
+
+    .bottom .top-back .teacher-block {
+        position   : relative;
+        float      : right;
+        width      : 80px;
+        height     : 40px;
+        margin     : 40px 0 0 0;
+        color      : rgba(0, 0, 0, 1);
+        text-align : center;
+        font-family: normal normal 20px SourceHanSansSC-regular;
+    }
+
+    .inf {
+        position: relative;
+        width   : 1000px;
+
+        margin: 20px auto;
+    }
+
+    .inf .inf-block {
+        position: relative;
+        width   : 800px;
+
+        margin: 0 0 0 200px;
+    }
+
+    .inf .inf-block .title {
+        position  : relative;
+        display   : inline-block;
+        width     : 150px;
+        height    : 45px;
+        color     : rgba(147, 138, 138, 1);
+        text-align: right;
+        font      : normal normal 26px/45px SourceHanSansSC-regular;
+    }
+
+    .inf .inf-block .content {
+        position: relative;
+        display : inline-block;
+        margin  : 0 0 0 20px;
+    }
 }
 
-#title4{
-    top:350px;
+
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+
+    /* =========== 顶部的banner属性 =========== */
+    .banner {
+        position: relative;
+        width   : 1000px;
+        margin  : 10px auto;
+    }
+
+    .clearfix:after,
+    .clearfix:before {
+        display: table;
+        content: "";
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .banner-title {
+        position: relative;
+        display : inline-block;
+        width   : 130px;
+        padding : 10px 0 0 40px;
+        color   : rgba(15, 136, 235, 1);
+        font    : normal bold 32px "方正汉真广标-标准";
+    }
+
+    .banner>.banner-button {
+        position: relative;
+        float   : right;
+    }
+
+    .banner>.banner-button>.font-small {
+        position                   : relative;
+        margin                     : 14px 8px 0 0;
+        padding                    : 8px;
+        background-color           : rgba(255, 255, 255, 1);
+        border                     : 1px none rgba(0, 0, 0, 1);
+        cursor                     : pointer;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration   : 0.4s;
+        -o-transition-duration     : 0.4s;
+        transition-duration        : 0.4s;
+        text-align                 : center;
+        font                       : normal bold 20px "方正汉真广标-标准";
+    }
+
+    .banner>.banner-button>.font-small:hover {
+        background-color: rgba(15, 136, 235, 1);
+        border          : 1px normal rgba(255, 255, 255, 1);
+        color           : rgba(255, 255, 255, 1);
+    }
+
+    .banner>.banner-bottom-line {
+        position  : relative;
+        width     : 1000px;
+        height    : 2px;
+        margin    : 10px auto;
+        border    : 2px solid rgba(15, 136, 235, 1);
+        background: rgba(15, 136, 235, 1);
+    }
+
+
+    /* ========== bottom内部详细的信息 ========== */
+    .bottom {
+        position: relative;
+        width   : 1000px;
+        margin  : 0 auto;
+    }
+
+    .bottom .top-back {
+        position        : relative;
+        width           : 1000px;
+        height          : 150px;
+        margin          : 0px auto;
+        background-color: rgba(222, 215, 215, 1);
+    }
+
+    .bottom .top-back .teacher-image {
+        position: relative;
+        float   : left;
+        width   : 150px;
+        height  : 192.75px;
+        margin  : 40px 0 0 30px;
+    }
+
+    .bottom .top-back .teacher-name {
+        position        : relative;
+        float           : left;
+        width           : 129px;
+        height          : 40px;
+        margin          : 40px 0 0 40px;
+        background-color: rgb(1, 153, 255, 0.52);
+        text-align      : center;
+        color           : rgba(255, 255, 255, 1);
+        font            : normal 20px/40px Arila;
+    }
+
+    .bottom .top-back .teacher-button {
+        position                          : relative;
+        float                             : left;
+        width                             : 129px;
+        height                            : 40px;
+        margin                            : 40px 0 0 40px;
+        text-align                        : center;
+        border                            : none;
+        cursor                            : pointer;
+        -webkit-transition-duration       : 0.4s;
+        -moz-transition-duration          : 0.4s;
+        -o-transition-duration            : 0.4s;
+        transition-duration               : 0.4s;
+        -webkit-transition-delay          : 0.1s;
+        -moz-transition-delay             : 0.1s;
+        -o-transition-delay               : 0.1s;
+        transition-delay                  : 0.1s;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-timing-function   : ease;
+        -o-transition-timing-function     : ease;
+        transition-timing-function        : ease;
+        color                             : rgba(0, 0, 0, 1);
+        font                              : normal bold 16px/40px Arial;
+    }
+
+    .bottom .top-back .teacher-button:hover {
+        background-color: rgba(97, 146, 200, 1);
+        color           : rgba(255, 255, 255, 1);
+        opacity         : 0.8;
+    }
+
+    .bottom .top-back .teacher-inf {
+        position  : relative;
+        float     : right;
+        width     : 80px;
+        height    : 40px;
+        margin    : 40px 20px 0 0;
+        color     : rgba(0, 0, 0, 1);
+        text-align: center;
+        font      : normal normal 20px Arial;
+    }
+
+    .bottom .top-back .teacher-block {
+        position   : relative;
+        float      : right;
+        width      : 80px;
+        height     : 40px;
+        margin     : 40px 0 0 0;
+        color      : rgba(0, 0, 0, 1);
+        text-align : center;
+        font-family: normal normal 20px SourceHanSansSC-regular;
+    }
+
+    .inf {
+        position: relative;
+        width   : 1000px;
+
+        margin: 20px auto;
+    }
+
+    .inf .inf-block {
+        position: relative;
+        width   : 800px;
+
+        margin: 0 0 0 200px;
+    }
+
+    .inf .inf-block .title {
+        position  : relative;
+        display   : inline-block;
+        width     : 150px;
+        height    : 45px;
+        color     : rgba(147, 138, 138, 1);
+        text-align: right;
+        font      : normal normal 26px/45px SourceHanSansSC-regular;
+    }
+
+    .inf .inf-block .content {
+        position: relative;
+        display : inline-block;
+        margin  : 0 0 0 20px;
+    }
 }
 
-#title5{
-    top:400px;
-}
-
-#title6{
-    top:450px;
-}
-
-#title7{
-    top:500px;
-}
-
-#title8{
-    top:550px;
-}
 
 
-.content{
-    width: 500px;
-    height: 30px;
-    position: absolute;
-    color: rgba(16, 16, 16, 1);
-    font-size: 20px;
-    text-align: left;
-    font-family: SourceHanSansSC-regular;
-}
+
+@media screen and (max-width: 479px) {
+
+    /* =========== 顶部的banner属性 =========== */
+    .banner {
+        position: relative;
+        width   : 1000px;
+        margin  : 10px auto;
+    }
+
+    .clearfix:after,
+    .clearfix:before {
+        display: table;
+        content: "";
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .banner-title {
+        position: relative;
+        display : inline-block;
+        width   : 130px;
+        padding : 10px 0 0 40px;
+        color   : rgba(15, 136, 235, 1);
+        font    : normal bold 32px "方正汉真广标-标准";
+    }
+
+    .banner>.banner-button {
+        position: relative;
+        float   : right;
+    }
+
+    .banner>.banner-button>.font-small {
+        position                   : relative;
+        margin                     : 14px 8px 0 0;
+        padding                    : 8px;
+        background-color           : rgba(255, 255, 255, 1);
+        border                     : 1px none rgba(0, 0, 0, 1);
+        cursor                     : pointer;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration   : 0.4s;
+        -o-transition-duration     : 0.4s;
+        transition-duration        : 0.4s;
+        text-align                 : center;
+        font                       : normal bold 20px "方正汉真广标-标准";
+    }
+
+    .banner>.banner-button>.font-small:hover {
+        background-color: rgba(15, 136, 235, 1);
+        border          : 1px normal rgba(255, 255, 255, 1);
+        color           : rgba(255, 255, 255, 1);
+    }
+
+    .banner>.banner-bottom-line {
+        position  : relative;
+        width     : 1000px;
+        height    : 2px;
+        margin    : 10px auto;
+        border    : 2px solid rgba(15, 136, 235, 1);
+        background: rgba(15, 136, 235, 1);
+    }
 
 
-/* .contentBlock{
-    left: 540px;
-    top: 500px;
-    width: 182px;
-    height: 30px;
-    position:absolute;
-    line-height: 20px;
-    background-color: rgba(15, 136, 235, 1);
-    text-align: center;
-    border: 1px solid rgba(15, 136, 235, 1);
-} */
+    /* ========== bottom内部详细的信息 ========== */
+    .bottom {
+        position: relative;
+        width   : 1000px;
+        margin  : 0 auto;
+    }
 
+    .bottom .top-back {
+        position        : relative;
+        width           : 1000px;
+        height          : 150px;
+        margin          : 0px auto;
+        background-color: rgba(222, 215, 215, 1);
+    }
 
-.button1 {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 2px 4px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
+    .bottom .top-back .teacher-image {
+        position: relative;
+        float   : left;
+        width   : 150px;
+        height  : 192.75px;
+        margin  : 40px 0 0 30px;
+    }
 
-.button11 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #008CBA;
-}
+    .bottom .top-back .teacher-name {
+        position        : relative;
+        float           : left;
+        width           : 129px;
+        height          : 40px;
+        margin          : 40px 0 0 40px;
+        background-color: rgb(1, 153, 255, 0.52);
+        text-align      : center;
+        color           : rgba(255, 255, 255, 1);
+        font            : normal 20px/40px Arila;
+    }
 
-.button11:hover {
-    background-color: #008CBA;
-    color: white;
-}
+    .bottom .top-back .teacher-button {
+        position                          : relative;
+        float                             : left;
+        width                             : 129px;
+        height                            : 40px;
+        margin                            : 40px 0 0 40px;
+        text-align                        : center;
+        border                            : none;
+        cursor                            : pointer;
+        -webkit-transition-duration       : 0.4s;
+        -moz-transition-duration          : 0.4s;
+        -o-transition-duration            : 0.4s;
+        transition-duration               : 0.4s;
+        -webkit-transition-delay          : 0.1s;
+        -moz-transition-delay             : 0.1s;
+        -o-transition-delay               : 0.1s;
+        transition-delay                  : 0.1s;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-timing-function   : ease;
+        -o-transition-timing-function     : ease;
+        transition-timing-function        : ease;
+        color                             : rgba(0, 0, 0, 1);
+        font                              : normal bold 16px/40px Arial;
+    }
 
+    .bottom .top-back .teacher-button:hover {
+        background-color: rgba(97, 146, 200, 1);
+        color           : rgba(255, 255, 255, 1);
+        opacity         : 0.8;
+    }
 
-.contentBlockFont{
-    left: 550px;
-    top: 500px;
-    position:absolute;
-    font-family: SourceHanSansSC-regular;
+    .bottom .top-back .teacher-inf {
+        position  : relative;
+        float     : right;
+        width     : 80px;
+        height    : 40px;
+        margin    : 40px 20px 0 0;
+        color     : rgba(0, 0, 0, 1);
+        text-align: center;
+        font      : normal normal 20px Arial;
+    }
+
+    .bottom .top-back .teacher-block {
+        position   : relative;
+        float      : right;
+        width      : 80px;
+        height     : 40px;
+        margin     : 40px 0 0 0;
+        color      : rgba(0, 0, 0, 1);
+        text-align : center;
+        font-family: normal normal 20px SourceHanSansSC-regular;
+    }
+
+    .inf {
+        position: relative;
+        width   : 1000px;
+
+        margin: 20px auto;
+    }
+
+    .inf .inf-block {
+        position: relative;
+        width   : 800px;
+
+        margin: 0 0 0 200px;
+    }
+
+    .inf .inf-block .title {
+        position  : relative;
+        display   : inline-block;
+        width     : 150px;
+        height    : 45px;
+        color     : rgba(147, 138, 138, 1);
+        text-align: right;
+        font      : normal normal 26px/45px SourceHanSansSC-regular;
+    }
+
+    .inf .inf-block .content {
+        position: relative;
+        display : inline-block;
+        margin  : 0 0 0 20px;
+    }
 }

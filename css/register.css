@@ -1,99 +1,119 @@
+body {
+    background-image : url("../asserts/back_main.png");
+    background-repeat: repeat;
+}
+
+/* =========== 顶部的banner属性 =========== */
 .banner {
+    position: relative;
     width   : 1000px;
     margin  : 10px auto;
-    position: relative;
-    overflow: hidden;
+}
+
+.clearfix:after,
+.clearfix:before {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
 }
 
 .banner-title {
-    width       : 130px;
-    padding-top : 10px;
-    padding-left: 40px;
-    position    : relative;
-    color       : rgba(15, 136, 235, 1);
-    font        : normal bold 32px "方正汉真广标-标准";
-    display     : inline-block;
+    position: relative;
+    display : inline-block;
+    width   : 130px;
+    padding : 10px 0 0 40px;
+    color   : rgba(15, 136, 235, 1);
+    font    : normal bold 32px "方正汉真广标-标准";
 }
 
 .banner>.banner-button {
-    /* margin        : 8px; */
-    position         : relative;
-    float            : right;
+    position: relative;
+    float   : right;
 }
 
 .banner>.banner-button>.font-small {
-    margin-top      : 14px;
-    margin-right    : 8px;
-    padding         : 8px;
-    background-color: #FFFFFF;
-    border          : none 1px #000000;
-    text-align      : center;
-    font            : normal bold 20px "方正汉真广标-标准";
-    cursor          : pointer;
-    /*动画过渡的时间*/
-    transition-duration: 0.4s;
-    position           : relative;
+    position                   : relative;
+    margin                     : 14px 8px 0 0;
+    padding                    : 8px;
+    background-color           : rgba(255, 255, 255, 1);
+    border                     : 1px none rgba(0, 0, 0, 1);
+    cursor                     : pointer;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration   : 0.4s;
+    -o-transition-duration     : 0.4s;
+    transition-duration        : 0.4s;
+    text-align                 : center;
+    font                       : normal bold 20px "方正汉真广标-标准";
 }
 
 .banner>.banner-button>.font-small:hover {
     background-color: rgba(15, 136, 235, 1);
-    border          : 1px #FFFFFF;
-    color           : #FFFFFF;
+    border          : 1px normal rgba(255, 255, 255, 1);
+    color           : rgba(255, 255, 255, 1);
 }
 
 .banner>.banner-bottom-line {
+    position  : relative;
     width     : 1000px;
     height    : 2px;
     margin    : 10px auto;
-    position  : relative;
     border    : 2px solid rgba(15, 136, 235, 1);
     background: rgba(15, 136, 235, 1);
 }
 
 
-/* 注册模块 */
+/* ========== 注册模块 ========== */
 .register {
     position: relative;
+    width   : 500px;
     margin  : 90px auto;
     border  : 1px solid rgba(15, 136, 235, 1);
-    width   : 500px;
-    overflow: hidden;
 }
 
 .register .register-title {
-    position    : relative;
-    margin      : 20px auto 5px;
-    padding-left: 30px;
-    width       : 200px;
-    font        : bold 16px YouYuan;
-    display     : block;
+    position: relative;
+    display : block;
+    width   : 200px;
+    margin  : 20px auto 5px;
+    padding : 0 0 0 30px;
+    font    : normal bold 16px YouYuan;
 }
 
 .register .register-input {
     position  : relative;
-    margin    : 0px auto 5px;
     width     : 200px;
+    margin    : 0 auto 5px;
     text-align: center;
 }
 
 /* 登录提交模块 */
 .register .register-submit {
     position  : relative;
-    margin    : 20px auto;
     width     : 200px;
+    margin    : 20px auto;
     text-align: center;
 }
 
 .register .register-submit-button {
-    width         : 122px;
-    height        : 32px;
-    border        : none;
-    padding-bottom: 2px;
-    font-size     : 14px #000000;
-    font-weight   : bold;
-    cursor        : pointer;
-    /*动画过渡的时间*/
-    transition-duration: 0.4s;
+    width        : 122px;
+    height       : 32px;
+    border       : none;
+    border-radius: 15px;
+    padding      : 0 0 2px 0;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration   : 0.4s;
+    -o-transition-duration     : 0.4s;
+    transition-duration        : 0.4s;
+    color                      : rgba(0, 0, 0, 1);
+    font                       : normal bold 14px Arial;
 }
 
 .register .register-submit-button:hover {
