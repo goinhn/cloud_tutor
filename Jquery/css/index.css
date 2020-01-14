@@ -3,7 +3,8 @@ body {
     background-repeat: repeat;
 }
 
-/* =========== 顶部的banner属性 =========== */
+
+/* ========== 顶部的banner栏属性 ========== */
 .banner {
     position: relative;
     width   : 1000px;
@@ -42,8 +43,8 @@ body {
     position                   : relative;
     margin                     : 14px 8px 0 0;
     padding                    : 8px;
-    background-color           : rgba(255, 255, 255, 1);
     border                     : 1px none rgba(0, 0, 0, 1);
+    background-color           : rgba(255, 255, 255, 1);
     cursor                     : pointer;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration   : 0.4s;
@@ -55,7 +56,7 @@ body {
 
 .banner>.banner-button>.font-small:hover {
     background-color: rgba(15, 136, 235, 1);
-    border          : 1px normal rgba(255, 255, 255, 1);
+    border          : rgba(255, 255, 255, 1);
     color           : rgba(255, 255, 255, 1);
 }
 
@@ -69,55 +70,49 @@ body {
 }
 
 
-/* ========== 注册模块 ========== */
-.register {
+/* ========== 中间背景图片属性 ========== */
+.image-main {
     position: relative;
-    width   : 500px;
-    margin  : 90px auto;
-    border  : 1px solid rgba(15, 136, 235, 1);
+    width   : 1000px;
+    height  : 450px;
+    margin  : 0 auto;
 }
 
-.register .register-title {
+.image-main .image-main-img {
+    width : 1000px;
+    height: 450px;
+}
+
+
+/* ========== 底部框架属性 ========== */
+.index-bottom {
+    position        : relative;
+    width           : 996px;
+    height          : 150px;
+    margin          : 20px auto;
+    background-color: rgba(255, 255, 255, 1);
+    border          : 2px solid rgba(15, 136, 235, 1);
+    text-align      : center;
+}
+
+.index-bottom .index-bottom-inf {
     position: relative;
-    display : block;
-    width   : 200px;
-    margin  : 20px auto 5px;
-    padding : 0 0 0 30px;
-    font    : normal bold 16px YouYuan;
+    display : inline-block;
+    width   : 300px;
+    margin  : 20px 0 0 0;
 }
 
-.register .register-input {
-    position  : relative;
-    width     : 200px;
-    margin    : 0 auto 5px;
-    text-align: center;
+.index-bottom .index-bottom-img {
+    position: relative;
+    width   : 50px;
+    height  : 50px;
 }
 
-/* 登录提交模块 */
-.register .register-submit {
-    position  : relative;
-    width     : 200px;
-    margin    : 20px auto;
-    text-align: center;
-}
-
-.register .register-submit-button {
-    width        : 122px;
-    height       : 32px;
-    border       : none;
-    border-radius: 15px;
-    padding      : 0 0 2px 0;
+.index-bottom .index-bottom-title-up {
     cursor: pointer;
-    -webkit-transition-duration: 0.4s;
-    -moz-transition-duration   : 0.4s;
-    -o-transition-duration     : 0.4s;
-    transition-duration        : 0.4s;
-    color                      : rgba(0, 0, 0, 1);
-    font                       : normal bold 14px Arial;
+    font  : normal bold 16px Arial;
 }
 
-.register .register-submit-button:hover {
-    background-color: #6192c8;
-    color           : #FFFFFF;
-    opacity         : 0.8;
+.index-bottom .index-bottom-title-bottom {
+    font: normal 16px Georgia;
 }

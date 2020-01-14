@@ -1,10 +1,5 @@
 window.onload = function () {
-    let lookNumber = document.getElementById('lookNumber');
-    let teacherName = documnet.getElementById('teacherName');
-    url = " ================ ";
-    let data = "teacherName="+teacherName+"?"+"lookNumber="+lookNumber; 
-
-    ajax['post'](url, data, information);
+    this.getInformation();
 };
 
 
@@ -86,4 +81,13 @@ var ajax = {
         }
         xhr.send(data);
     }
+}
+
+function getInformation(){
+    let lookNumber = document.getElementById('lookNumber');
+    let teacherName = documnet.getElementById('teacherName');
+    url = " ================ ";
+    let data = "teacherName="+teacherName+"?"+"lookNumber="+lookNumber; 
+
+    ajax['post'](url, data, information);
 }

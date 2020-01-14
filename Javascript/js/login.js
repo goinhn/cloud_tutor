@@ -1,38 +1,37 @@
-window.onload = function(){
-
+window.onload = function () {
+    if (this.getCookie('isLogin') === 'true') {
+        // 跳转到index界面
+    }
 }
 
 
-function index(){
+function index() {
     let url = '=====';
-    ajax['get'](url, function(){
+    ajax['get'](url, function () {
 
     });
 }
 
-function recruitment(){
+function recruitment() {
     let url = '=====';
-    ajax['get'](url, function(){
+    ajax['get'](url, function () {
 
     });
 }
 
-function tutorInformation(){
+function tutorInformation() {
     let url = '=====';
-    ajax['get'](url, function(){
+    ajax['get'](url, function () {
 
     });
 }
-function login(){
-    let url = '=====';
-    ajax['get'](url, function(){
-
-    });
+function login() {
+    window.location = '#';
 }
 
-function register(){
+function register() {
     let url = '=====';
-    ajax['get'](url, function(){
+    ajax['get'](url, function () {
 
     });
 }
@@ -86,15 +85,58 @@ var ajax = {
 }
 
 
-function accountCheckBlur(){
+function accountCheckBlur() {
     let username = document.getElementById('username');
     let prompt = document.getElementById('accountPrompt');
     console.log(username);
-    if(username.value.length>20){
+    if (username.value.length > 20) {
         alert('error account!');
         prompt.innerHTML = '账号的长度不超过20个字符';
-    }else{
+    } else {
         prompt.innerHTML = '';
     }
 }
 
+// 添加cookie的函数
+function addCookie(name, value, expireHours) {
+    let cookieString = name + "=" + escape(value);
+    //判断是否设置过期时间
+    if (expireHours > 0) {
+        let date = new Date();
+        date.setTime(date.getTime + expireHours * 3600 * 1000);
+        cookieString = cookieString + ";expire=" + date.toGMTString();
+    }
+    document.cookie = cookieString;
+}
+
+// 获取指定的cookie
+function getCookie(name) {
+    let strCookie = document.cookie;
+    let arrCookie = strCookie.split(";");
+    for (let i = 0; i < arrCookie.length; i++) {
+        let arr = arrCookie[i].split("=");
+        if (arr[0] == name)
+            return arr[1];
+    }
+    return "";
+}
+
+// 改变指定的cookie
+function changeCookie(name, value) {
+    document.cookie(name + '=' + escape(value));
+}
+
+// 登录验证函数
+function loginSubmit() {
+    let userId = document.getElementById('username');
+    let userPassword = document.getElementById('userPassword');
+
+    // 后端响应处理函数
+
+    if (true) {
+        this.addCookie('isLogin', 'true', 24);
+        // 跳转到index界面
+    } else {
+        alert('账号或者密码错误请重新输入');
+    }
+}

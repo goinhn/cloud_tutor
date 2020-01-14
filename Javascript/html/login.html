@@ -27,13 +27,14 @@
     <div class="login clearfix">
         <label class="login-title" for="account">账号</label>
         <div class=login-input>
-            <input type="text" name="account" id="username" placeholder="请输入账号" onblur="accountCheckBlur()">
+            <input type="text" name="account" class="login-input-frame" id="username" placeholder="请输入账号"
+                onblur="accountCheckBlur()">
             <div id="accountPrompt"></div>
         </div>
 
         <label class="login-title" for="password">密码</label>
         <div class="login-input">
-            <input type="password" name="password" id="user_password" placeholder="请输入密码">
+            <input type="password" name="password" class="login-input-frame" id="userPassword" placeholder="请输入密码">
         </div>
 
         <div class="forget-remember clearfix">
@@ -45,7 +46,7 @@
         </div>
 
         <div class="login-submit">
-            <input type="submit" class="login-submit-button" name="login_button" id="login_submit" value="login">
+            <input type="submit" class="login-submit-button" name="login_button" id="login_submit" value="login" onclick="loginSubmit()">
         </div>
     </div>
 

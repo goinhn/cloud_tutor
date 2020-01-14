@@ -1,0 +1,129 @@
+body {
+    background-image : url("../asserts/back_main.png");
+    background-repeat: repeat;
+}
+
+/* =========== 顶部的banner属性 =========== */
+.banner {
+    position: relative;
+    width   : 1000px;
+    margin  : 10px auto;
+}
+
+.clearfix:after,
+.clearfix:before {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.banner-title {
+    position: relative;
+    display : inline-block;
+    width   : 130px;
+    padding : 10px 0 0 40px;
+    color   : rgba(15, 136, 235, 1);
+    font    : normal bold 32px "方正汉真广标-标准";
+}
+
+.banner>.banner-button {
+    position: relative;
+    float   : right;
+}
+
+.banner>.banner-button>.font-small {
+    position                   : relative;
+    margin                     : 14px 8px 0 0;
+    padding                    : 8px;
+    background-color           : rgba(255, 255, 255, 1);
+    border                     : 1px none rgba(0, 0, 0, 1);
+    cursor                     : pointer;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration   : 0.4s;
+    -o-transition-duration     : 0.4s;
+    transition-duration        : 0.4s;
+    text-align                 : center;
+    font                       : normal bold 20px "方正汉真广标-标准";
+}
+
+.banner>.banner-button>.font-small:hover {
+    background-color: rgba(15, 136, 235, 1);
+    border          : 1px normal rgba(255, 255, 255, 1);
+    color           : rgba(255, 255, 255, 1);
+}
+
+.banner>.banner-bottom-line {
+    position  : relative;
+    width     : 1000px;
+    height    : 2px;
+    margin    : 10px auto;
+    border    : 2px solid rgba(15, 136, 235, 1);
+    background: rgba(15, 136, 235, 1);
+}
+
+
+/* ========== 注册模块 ========== */
+.register {
+    position: relative;
+    width   : 500px;
+    margin  : 90px auto;
+    border  : 1px solid rgba(15, 136, 235, 1);
+}
+
+.register .register-title {
+    position: relative;
+    display : block;
+    width   : 200px;
+    margin  : 20px auto 5px;
+    font    : normal bold 16px YouYuan;
+}
+
+.register .register-input {
+    position  : relative;
+    width     : 300px;
+    margin    : 0 auto 5px;
+    text-align: center;
+}
+
+.register .register-input .register-input-frame {
+    position: relative;
+    width   : 200px;
+    height  : 18px;
+    margin  : 0 auto 5px;
+}
+
+/* 登录提交模块 */
+.register .register-submit {
+    position  : relative;
+    width     : 200px;
+    margin    : 20px auto;
+    text-align: center;
+}
+
+.register .register-submit-button {
+    width                      : 122px;
+    height                     : 32px;
+    border                     : none;
+    border-radius              : 15px;
+    padding                    : 0 0 2px 0;
+    cursor                     : pointer;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration   : 0.4s;
+    -o-transition-duration     : 0.4s;
+    transition-duration        : 0.4s;
+    color                      : rgba(0, 0, 0, 1);
+    font                       : normal bold 14px Arial;
+}
+
+.register .register-submit-button:hover {
+    background-color: #6192c8;
+    color           : #FFFFFF;
+    opacity         : 0.8;
+}

@@ -1,40 +1,37 @@
-window.onload = function(){
+window.onload = function () {
 
 }
 
 
-function index(){
+function index() {
     let url = '=====';
-    ajax['get'](url, function(){
+    ajax['get'](url, function () {
 
     });
 }
 
-function recruitment(){
+function recruitment() {
     let url = '=====';
-    ajax['get'](url, function(){
+    ajax['get'](url, function () {
 
     });
 }
 
-function tutorInformation(){
+function tutorInformation() {
     let url = '=====';
-    ajax['get'](url, function(){
+    ajax['get'](url, function () {
 
     });
 }
-function login(){
+function login() {
     let url = '=====';
-    ajax['get'](url, function(){
+    ajax['get'](url, function () {
 
     });
 }
 
-function register(){
-    let url = '=====';
-    ajax['get'](url, function(){
-
-    });
+function register() {
+    window.location = '#';
 }
 
 
@@ -86,55 +83,55 @@ var ajax = {
 }
 
 
-function accountCheckFocus(){
+function accountCheckFocus() {
     let checkAccount = document.getElementById('checkAccount');
     checkAccount.innerHTML = '请输入账号在4-20个字符之间';
 }
 
-function accountCheckBlur(){
+function accountCheckBlur() {
     let userId = document.getElementById('userId');
     let checkAccount = document.getElementById('checkAccount');
 
-    if(userId.value.length < 4 || userId.value.length > 20){
+    if (userId.value.length < 4 || userId.value.length > 20) {
         checkAccount.innerHTML = '输入账号不符合要求';
-    }else{
+    } else {
         checkAccount.innerHTML = '';
     }
 }
 
-function nameCheckFocus(){
-    
-}
-
-function nameCheckBlur(){
+function nameCheckFocus() {
 
 }
 
-function passwordCheckFocus(){
+function nameCheckBlur() {
 
 }
 
-function passwordCheckBlur(){
+function passwordCheckFocus() {
 
 }
 
-function rePasswordCheckFocus(){
-    
+function passwordCheckBlur() {
+
 }
 
-function rePasswordCheckBlur(){
+function rePasswordCheckFocus() {
+
+}
+
+function rePasswordCheckBlur() {
     let userPassword = document.getElementById('userPassword');
     let userRePassword = document.getElementById('userRePassword');
     let checkRePassword = document.getElementById('checkRePassword');
 
-    if(userPassword.value === userRePassword.value){
+    if (userPassword.value === userRePassword.value) {
         checkRePassword.innerHTML = '';
-    }else{
+    } else {
         checkRePassword.innerHTML = '两次密码输入的不一致';
     }
 }
 
-function submit(){
+function submit() {
     let userId = document.getElementById('userId');
     let username = document.getElementById('username');
     let userPassword = document.getElementById('userPassword');

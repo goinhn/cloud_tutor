@@ -42,12 +42,12 @@ body {
 
 /* banner按钮内的字体 */
 .banner>.banner-button>.font-small {
-    position        : realtive;
-    margin          : 14px 8px 0 0;
-    padding         : 8px;
-    background-color: rgba(255, 255, 255, 1);
-    border          : 1px none rgba(0, 0, 0, 1);
-    cursor          : pointer;
+    position                   : realtive;
+    margin                     : 14px 8px 0 0;
+    padding                    : 8px;
+    background-color           : rgba(255, 255, 255, 1);
+    border                     : 1px none rgba(0, 0, 0, 1);
+    cursor                     : pointer;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration   : 0.4s;
     -o-transition-duration     : 0.4s;
@@ -88,22 +88,28 @@ body {
     display : block;
     width   : 200px;
     margin  : 20px auto 5px;
-    padding : 0 0 0 30px;
-    font    : bold 16px YouYuan;
+    font    : normal bold 16px YouYuan;
 }
 
 /* 登录输入框 */
 .login .login-input {
     position  : relative;
-    width     : 200px;
+    width     : 300px;
     margin    : 0px auto 5px;
     text-align: center;
+}
+
+.login .login-input .login-input-frame {
+    position: relative;
+    width   : 200px;
+    height  : 18px;
+    margin  : 0 auto;
 }
 
 .login .forget-remember {
     position: relative;
     margin  : 20px auto;
-    width   : 200px;
+    width   : 300px;
 }
 
 .login .login-forget {
