@@ -19,8 +19,8 @@ function information(data){
     let experience = document.getElementById('experience');
     let subject = document.getElementById('subject');
     let teacherTime = document.getElementById('teacherTime');
-    let teacherCost = doucment.getElementById('teacherCost');
-    let discount = doucment.getElementById('discount');
+    let teacherCost = document.getElementById('teacherCost');
+    let discount = document.getElementById('discount');
     let contact = document.getElementById('contact');
     let personInformation = document.getElementById('personInformation');
 
@@ -85,7 +85,7 @@ var ajax = {
 
 function getInformation(){
     let lookNumber = document.getElementById('lookNumber');
-    let teacherName = documnet.getElementById('teacherName');
+    let teacherName = document.getElementById('teacherName');
     url = " ================ ";
     let data = "teacherName="+teacherName+"?"+"lookNumber="+lookNumber; 
 
