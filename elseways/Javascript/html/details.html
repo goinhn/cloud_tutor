@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="../css/details.css" />
+
+    <title>家教详情页</title>
+</head>
+
+<body>
+    <div class="banner clearfix">
+        <div class="banner-title">云家教</div>
+        <div class="banner-button">
+            <button class="font-small" id="returnButton" onclick="returnTo()">返回</button>
+        </div>
+        <div class="banner-bottom-line"></div>
+    </div>
+
+
+    <div class="bottom">
+        <div class="top-back">
+            <img class="teacher-image" src="../image/teacher.jpg">
+            <div class="teacher-name" id="teacherName">张xx</div>
+            <button class="teacher-button" id="teacherButton" onclick="reservation()">可预约</button>
+            <div class="teacher-inf" id="lookNumber">98</div>
+            <div class="teacher-block">浏览量:</div>
+        </div>
+    </div>
+
+
+    <div class="inf">
+        <div class="inf-block">
+            <div class="title">身份验证</div>
+            <div class="content" id="authentication">身份证 院校学生证 高考分数 四级分数 六级分数</div>
+        </div>
+        <div class="inf-block">
+            <div class="title">教授经验</div>
+            <div class="content" id="experience">一年</div>
+        </div>
+        <div class="inf-block">
+            <div class="title">家教科目</div>
+            <div class="content" id="subject">小学英语</div>
+        </div>
+        <div class="inf-block">
+            <div class="title">可授课时间</div>
+            <div class="content" id="teacherTime">周一至周五晚上六点后</div>
+        </div>
+        <div class="inf-block">
+            <div class="title">课时费</div>
+            <div class="content" id="teacherCost">50/小时</div>
+        </div>
+        <div class="inf-block">
+            <div class="title">优惠信息</div>
+            <div class="content" id="discount">免费授课一次</div>
+        </div>
+        <div class="inf-block">
+            <div class="title">联系方式</div>
+            <div class="content" id="contact">15155511321</div>
+        </div>
+        <div class="inf-block">
+            <div class="title" id="personInformation">个人简介</div>
+            <div class="content">为人耐心开朗，有责任感，热爱做家教</div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="../js/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/details.js"></script>
+
+</html>

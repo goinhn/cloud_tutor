@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="../css/recruitment.css" />
+
+    <title>家教招聘</title>
+</head>
+
+<body>
+
+    <div class="banner clearfix">
+        <div class="banner-title">云家教</div>
+        <div class="banner-button">
+            <button class="font-small" id="buttonIndex">首页</button>
+            <button class="font-small" id="buttonRecruitment">家教招聘</button>
+            <button class="font-small" id="buttonTutorInformation">家教信息</button>
+            <button class="font-small" id="buttonLogin">登录</button>
+            <button class="font-small" id="buttonRegister">注册</button>
+        </div>
+        <div class="banner-bottom-line"></div>
+    </div>
+
+
+    <div class="search clearfix">
+        <div class="search-block clearfix">
+            <div class="search-title">学科</div>
+            <button class="search-button" id="everything">不限</button>
+            <button class="search-button" id="subjectMath">数学</button>
+            <button class="search-button" id="subjectEnglish">英语</button>
+            <button class="search-button" id="subjectChinese">语文</button>
+        </div>
+
+        <div class="search-block">
+            <div class="search-title">关键词</div>
+            <input type="text" class="search-input" id="keyWord" placeholder="搜索大学、经验、证书等要求">
+            <button class="input-button">搜索</button>
+        </div>
+    </div>
+
+
+    <div class="tutor">
+        <div class="tutor-line"></div>
+
+        <div class="tutor-title" id="tutorTitle">小学英语家教</div>
+        <div class="tutor-time" id="tutorTime">2019-1-1</div>
+
+        <div class="tutor-job">
+            <div class="job-title">身份要求：</div>
+            <div class="job-content" id="claim">师范院校学生</div>
+        </div>
+        <div class="tutor-job">
+            <div class="job-title">授课次数：</div>
+            <div class="job-content" id="teachNumber">3次/周</div>
+        </div>
+        <div class="tutor-job">
+            <div class="job-title">具体要求：</div>
+            <div class="job-content" id="specific">英语基础扎实，有较强的英语思维</div>
+        </div>
+        <div class="tutor-job">
+            <div class="job-title">性别要求：</div>
+            <div class="job-content" id="gender">不限</div>
+        </div>
+        <div class="tutor-job">
+            <div class="job-title">课时费：</div>
+            <div class="job-content" id="tutorFee">50~60/小时</div>
+        </div>
+
+        <button class="tutor-button" id="apply">点击应聘</button>
+    </div>
+
+</body>
+<script type="text/javascript" src="../js/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery/jquery.cookie.js"></script>
+<script src="../dist/packRecruitment.js"></script>
+
+</html>

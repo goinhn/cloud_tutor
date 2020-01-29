@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <title>云家教：登录</title>
+</head>
+
+<body>
+    <div class="banner clearfix">
+        <div class="banner-title">云家教</div>
+        <div class="banner-button">
+            <button class="font-small" id="buttonIndex">首页</button>
+            <button class="font-small" id="buttonRecruitment">家教招聘</button>
+            <button class="font-small" id="buttonTutorInformation">家教信息</button>
+            <button class="font-small" id="buttonLogin">登录</button>
+            <button class="font-small" id="buttonRegister">注册</button>
+        </div>
+        <div class="banner-bottom-line"></div>
+    </div>
+
+
+    <div class="login clearfix">
+        <label class="login-title" for="account">账号</label>
+        <div class=login-input>
+            <input type="text" name="account" class="login-input-frame" id="username" placeholder="请输入账号"
+                onblur="accountCheckBlur()">
+            <div id="accountPrompt"></div>
+        </div>
+
+        <label class="login-title" for="password">密码</label>
+        <div class="login-input">
+            <input type="password" name="password" class="login-input-frame" id="userPassword" placeholder="请输入密码">
+        </div>
+
+        <div class="forget-remember clearfix">
+            <span class="login-forget"><a href="javascript:void(0);">忘记密码?</a></span>
+            <span class="login-remember">
+                <input type="checkbox" name="checkbox" id="save_me">
+                <label for="checkbox">记住</label>
+            </span>
+        </div>
+
+        <div class="login-submit">
+            <input type="submit" class="login-submit-button" name="login_button" id="loginSubmit" value="login">
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript" src="../js/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery/jquery.cookie.js"></script>
+<script src="../packJs/packLogin.js"></script>
+
+</html>
