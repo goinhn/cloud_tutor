@@ -1,4 +1,4 @@
-package dao;
+package domain;
 
 import java.io.Serializable;
 
@@ -15,6 +15,7 @@ public class Offer implements Serializable {
     private String fee;//费用
     private String address;//地址
     private String time;//发布时间
+    private String click;//点击次数
 
     public Offer() {
     }
@@ -94,6 +95,14 @@ public class Offer implements Serializable {
         this.time = time;
     }
 
+    public String getClick() {
+        return click;
+    }
+
+    public void setClick(String click) {
+        this.click = click;
+    }
+
     @Override
     public String toString() {
         return "Offer{" +
@@ -105,7 +114,7 @@ public class Offer implements Serializable {
                 ", fee='" + fee + '\'' +
                 ", address='" + address + '\'' +
                 ", time='" + time + '\'' +
+                ", click='" + click + '\'' +
                 '}';
     }
-
 }

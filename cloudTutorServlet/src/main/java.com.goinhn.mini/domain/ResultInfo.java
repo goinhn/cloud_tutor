@@ -1,4 +1,4 @@
-package dao;
+package domain;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package dao;
+package domain;
 
 import java.io.Serializable;
 
@@ -19,7 +19,9 @@ public class Tutor implements Serializable {
     private String address;//地址
     private String contact;//联系方式
     private String introduction;//个人介绍
+    private String picture;//图片路径
     private String time;//发布时间
+    private String click;//点击次数
 
     public Tutor() {
     }
@@ -128,6 +130,14 @@ public class Tutor implements Serializable {
         this.contact = contact;
     }
 
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
+
     public String getIntroduction() {
         return introduction;
     }
@@ -142,6 +152,14 @@ public class Tutor implements Serializable {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    public String getClick() {
+        return click;
+    }
+
+    public void setClick(String click) {
+        this.click = click;
     }
 
     @Override
@@ -159,7 +177,9 @@ public class Tutor implements Serializable {
                 ", address='" + address + '\'' +
                 ", contact='" + contact + '\'' +
                 ", introduction='" + introduction + '\'' +
+                ", picture='" + picture + '\'' +
                 ", time='" + time + '\'' +
+                ", click='" + click + '\'' +
                 '}';
     }
 }
