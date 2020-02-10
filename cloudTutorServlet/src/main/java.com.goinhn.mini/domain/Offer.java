@@ -20,7 +20,7 @@ public class Offer implements Serializable {
     public Offer() {
     }
 
-    public Offer(int userId, int offerId, String certification, String sex, String claim, String fee, String address, String time) {
+    public Offer(int userId, int offerId, String certification, String sex, String claim, String fee, String address, String time, String click) {
         this.userId = userId;
         this.offerId = offerId;
         this.certification = certification;
@@ -29,6 +29,7 @@ public class Offer implements Serializable {
         this.fee = fee;
         this.address = address;
         this.time = time;
+        this.click = click;
     }
 
     public int getUserId() {

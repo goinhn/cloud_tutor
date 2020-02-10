@@ -140,10 +140,7 @@
 
     <build>
         <finalName>cloudTutorServlet</finalName>
-        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-            <!--maven插件-->
             <plugins>
-                <!--jdk编译插件-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -153,17 +150,16 @@
                         <encoding>utf-8</encoding>
                     </configuration>
                 </plugin>
-                <!--tomcat插件-->
                 <plugin>
                     <groupId>org.apache.tomcat.maven</groupId>
                     <artifactId>tomcat7-maven-plugin</artifactId>
                     <version>2.1</version>
                     <configuration>
-                        <port>8080</port>
+                        <port>8090</port>
                         <path>/mini</path>
                     </configuration>
                 </plugin>
+
             </plugins>
-        </pluginManagement>
     </build>
 </project>

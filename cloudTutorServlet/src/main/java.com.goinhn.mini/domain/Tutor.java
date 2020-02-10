@@ -26,7 +26,7 @@ public class Tutor implements Serializable {
     public Tutor() {
     }
 
-    public Tutor(int userId, int tutorId, String name, String sex, String certification, String experience, String subject, String frequency, String wage, String address, String contact, String introduction, String time) {
+    public Tutor(int userId, int tutorId, String name, String sex, String certification, String experience, String subject, String frequency, String wage, String address, String contact, String introduction, String picture, String time, String click) {
         this.userId = userId;
         this.tutorId = tutorId;
         this.name = name;
@@ -39,7 +39,9 @@ public class Tutor implements Serializable {
         this.address = address;
         this.contact = contact;
         this.introduction = introduction;
+        this.picture = picture;
         this.time = time;
+        this.click = click;
     }
 
     public int getUserId() {
@@ -130,20 +132,20 @@ public class Tutor implements Serializable {
         this.contact = contact;
     }
 
-    public String getPicture() {
-        return picture;
-    }
-
-    public void setPicture(String picture) {
-        this.picture = picture;
-    }
-
     public String getIntroduction() {
         return introduction;
     }
 
     public void setIntroduction(String introduction) {
         this.introduction = introduction;
+    }
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
     }
 
     public String getTime() {

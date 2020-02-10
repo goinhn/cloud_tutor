@@ -101,6 +101,7 @@ const register = () => {
     });
 }
 
+
 $(function(){
     
 });
@@ -118,24 +119,5 @@ $('#contactUs').on({
     click: alertToDo
 })
 
-$('#buttonIndex').on({
-    click: index
-})
-
-$('#buttonRecruitment').on({
-    click: recruitment
-})
-
-$('#buttonTutorInformation').on({
-    click: tutorInformation
-});
-
-$('#buttonLogin').on({
-    click: login
-});
-
-$('#buttonRegister').on({
-    click: register
-});
 
 

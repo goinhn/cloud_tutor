@@ -26,7 +26,7 @@ public class RegisterServlet extends HttpServlet {
         String checkCode = (String) session.getAttribute("CHECKCODE_SERVER");
         session.removeAttribute("CHECKCODE_SERVER");
 
-        if(checkCode == null || !checkCode.equalsIgnoreCase(check)){
+        if (checkCode == null || !checkCode.equalsIgnoreCase(check)) {
             ResultInfo info = new ResultInfo();
             info.setFlag(false);
             info.setErrorMsg("验证码错误");
@@ -42,7 +42,7 @@ public class RegisterServlet extends HttpServlet {
 
         User user = new User();
         try {
-            BeanUtils.populate(user,map);
+            BeanUtils.populate(user, map);
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
@@ -53,9 +53,9 @@ public class RegisterServlet extends HttpServlet {
         boolean flag = service.register(user);
         ResultInfo info = new ResultInfo();
 
-        if(flag){
+        if (flag) {
             info.setFlag(true);
-        }else{
+        } else {
             info.setFlag(false);
             info.setErrorMsg("注册失败!");
         }

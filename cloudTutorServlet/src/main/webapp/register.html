@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>注册</title>
 
@@ -27,9 +27,7 @@
             </div>
             <div class="rg_form_center">
                 <div id="errorMsg" style="color:red;text-align: center"></div>
-                <!--注册表单-->
-                <form id="registerForm" action="user">
-                    <!--提交处理请求的标识符-->
+                <form id="registerForm" action="">
                     <input type="hidden" name="action" value="register">
                     <table style="margin-top: 25px;">
                         <tr>
@@ -95,20 +93,14 @@
                             </td>
                             <td class="td_right check">
                                 <input type="text" id="check" name="check" class="check">
-                                <img src="checkCode" height="32px" alt="" onclick="changeCheckCode(this)">
-                                <script type="text/javascript">
-                                    //图片点击事件
-                                    function changeCheckCode(img) {
-                                        img.src="checkCode?"+new Date().getTime();
-                                    }
-                                </script>
+                                <img src="checkCode" height="32px" alt="code" id="checkCode">
                             </td>
                         </tr>
                         <tr>
                             <td class="td_left"> 
                             </td>
                             <td class="td_right check"> 
-                                <input type="submit" class="submit" value="注册">
+                                <button class="submit" id="registerButton" value="注册"></button>
                                 <span id="msg" style="color: red;"></span>
                             </td>
                         </tr>
@@ -118,7 +110,7 @@
             <div class="rg_form_right">
                 <p>
                     已有账号？
-                    <a href="#">立即登录</a>
+                    <a href="login.html">立即登录</a>
                 </p>
             </div>
         </div>
@@ -131,6 +123,6 @@
 
 <script type="text/javascript" src="./js/utils/include.js"></script>
 
-<!-- <script src="../dist/packRegister.js"></script> -->
+<script src="./js/register.js"></script>
 
 </html>
