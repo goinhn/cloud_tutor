@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "bootstrap test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --open"
+  },
+  "author": "goinhn",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {}
+}
