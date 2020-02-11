@@ -3,6 +3,63 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+   <filter>
+       <filter-name>filterAll</filter-name>
+       <filter-class>web.filter.CharacterFilter</filter-class>
+   </filter>
+   <filter-mapping>
+       <filter-name>filterAll</filter-name>
+       <url-pattern>/*</url-pattern>
+   </filter-mapping>
+
+  <listener>
+     <listener-class>web.listener.ContextLoaderListener</listener-class>
+  </listener>
+
+  <servlet>
+    <servlet-name>userRegister</servlet-name>
+    <servlet-class>web.servlet.RegisterServlet</servlet-class>
+    <load-on-startup>0</load-on-startup>  <!-- 服务器启动的时候创建 -->
+  </servlet>
+  <servlet>
+    <servlet-name>userActive</servlet-name>
+    <servlet-class>web.servlet.ActiveServlet</servlet-class>
+    <load-on-startup>-1</load-on-startup>  <!-- 第一次被访问的时候创建 -->
+  </servlet>
+  <servlet>
+    <servlet-name>userCheckCode</servlet-name>
+    <servlet-class>web.servlet.CheckCodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>userLogin</servlet-name>
+    <servlet-class>web.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>userExit</servlet-name>
+    <servlet-class>web.servlet.ExitServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>userRegister</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>userActive</servlet-name>
+    <url-pattern>/active</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>userCheckCode</servlet-name>
+    <url-pattern>/checkCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>userLogin</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>userExit</servlet-name>
+    <url-pattern>/exit</url-pattern>
+  </servlet-mapping>
+
+
 </web-app>
 
