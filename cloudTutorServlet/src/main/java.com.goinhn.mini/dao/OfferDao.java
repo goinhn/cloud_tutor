@@ -14,6 +14,10 @@ public interface OfferDao {
 
     void updateClick(Offer offer);
 
+    int findCount();
+
+    List<Offer> findByPage(int start, int pageSize);
+
     int findSexCount(String sex);
 
     List<Offer> findSexByPage(int start, int pageSize, String sex);

@@ -93,6 +93,58 @@ public class OfferDaoImpl implements OfferDao {
         }
     }
 
+
+    /**
+     * 根据性别查找信息的总数
+     *
+     * @param
+     * @return
+     */
+    @Override
+    public int findCount() {
+        String sql = "select count(*) from tab_offer where 1 = 1";
+        int count = 0;
+        try {
+            count = template.queryForObject(sql, Integer.class);
+        } catch (DataAccessException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return count;
+    }
+
+    /**
+     * 根据性别对信息进行分页
+     *
+     * @param start
+     * @param pageSize
+     * @return
+     */
+    @Override
+    public List<Offer> findByPage(int start, int pageSize) {
+        String sql = " select * from tab_offer where 1 = 1 ";
+        StringBuilder sb = new StringBuilder(sql);
+        List params = new ArrayList();
+        sb.append(" limit ? , ? ");
+        sql = sb.toString();
+        params.add(start);
+        params.add(pageSize);
+
+        List<Offer> offers = null;
+
+        try {
+            offers = template.query(sql, new BeanPropertyRowMapper<>(Offer.class), params.toArray());
+        } catch (DataAccessException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return offers;
+    }
+
     /**
      * 根据性别查找offer信息的总数
      *

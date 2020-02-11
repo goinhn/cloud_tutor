@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService {
         user.setStatus("N");
         userDao.saveUser(user);
 
-        String content = "<a href='http://localhost/mini/active?code=" + user.getCode() + "'>点击激活</a>";
+        String content = "<a href='http://localhost/mini/user/active?code=" + user.getCode() + "'>点击激活</a>";
         MailUtils.sendMail(user.getEmail(), content, "云家教激活邮件");
 
         return true;

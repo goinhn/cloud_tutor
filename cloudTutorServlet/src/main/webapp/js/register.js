@@ -36,7 +36,7 @@ function checkEmail() {
 
 
 function changeCheckCode() {
-    $(this).attr('src', "checkCode?" + new Date().getTime());
+    $(this).attr('src', "user/checkCode?" + new Date().getTime());
 }
 
 
@@ -44,7 +44,7 @@ $(function () {
     $("#registerButton").on({
         click: () => {
             if (checkUsername() && checkPassword() && checkEmail()) {
-                $.post("register", $("#registerForm").serialize(), function (data) {
+                $.post("user/register", $("#registerForm").serialize(), function (data) {
                     if (data["flag"] == "true") {
                         alert("注册成功，请注意查收邮件进行激活");
                     } else if (data["flag"] == "false") {

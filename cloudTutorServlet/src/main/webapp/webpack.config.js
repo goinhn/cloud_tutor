@@ -4,9 +4,8 @@ module.exports = {
         packIndex: './js/index.js',
         packLogin: './js/login.js',
         packRegister: './js/register.js',
-        packRecruitment: './js/recruitment.js',
-        packTutorInformation: './js/tutorInformation.js',
-        packDetails: './js/details.js',
+        packRecruitment: './js/offer        packTutorInformation: './js/tutor.js',
+        packDetails: './js/OfferDetails.js',
         packUtils: './js/utils/utils.js'
     },
     output: {

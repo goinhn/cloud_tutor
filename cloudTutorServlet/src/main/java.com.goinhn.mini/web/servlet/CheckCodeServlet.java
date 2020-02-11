@@ -50,7 +50,7 @@ public class CheckCodeServlet extends HttpServlet {
 
         Random ran = new Random();
         g.setColor(Color.black);
-        for(int i = 0; i< 10;i++){
+        for(int i = 0; i< 5;i++){
         	int x1 = ran.nextInt(width);
         	int x2 = ran.nextInt(width);
         	int y1 = ran.nextInt(height);

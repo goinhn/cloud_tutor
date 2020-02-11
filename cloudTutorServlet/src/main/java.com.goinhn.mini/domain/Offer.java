@@ -15,12 +15,12 @@ public class Offer implements Serializable {
     private String fee;//费用
     private String address;//地址
     private String time;//发布时间
-    private String click;//点击次数
+    private int click;//点击次数
 
     public Offer() {
     }
 
-    public Offer(int userId, int offerId, String certification, String sex, String claim, String fee, String address, String time, String click) {
+    public Offer(int userId, int offerId, String certification, String sex, String claim, String fee, String address, String time, int click) {
         this.userId = userId;
         this.offerId = offerId;
         this.certification = certification;
@@ -96,11 +96,11 @@ public class Offer implements Serializable {
         this.time = time;
     }
 
-    public String getClick() {
+    public int getClick() {
         return click;
     }
 
-    public void setClick(String click) {
+    public void setClick(int click) {
         this.click = click;
     }
 

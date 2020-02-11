@@ -21,12 +21,12 @@ public class Tutor implements Serializable {
     private String introduction;//个人介绍
     private String picture;//图片路径
     private String time;//发布时间
-    private String click;//点击次数
+    private int click;//点击次数
 
     public Tutor() {
     }
 
-    public Tutor(int userId, int tutorId, String name, String sex, String certification, String experience, String subject, String frequency, String wage, String address, String contact, String introduction, String picture, String time, String click) {
+    public Tutor(int userId, int tutorId, String name, String sex, String certification, String experience, String subject, String frequency, String wage, String address, String contact, String introduction, String picture, String time, int click) {
         this.userId = userId;
         this.tutorId = tutorId;
         this.name = name;
@@ -156,11 +156,11 @@ public class Tutor implements Serializable {
         this.time = time;
     }
 
-    public String getClick() {
+    public int getClick() {
         return click;
     }
 
-    public void setClick(String click) {
+    public void setClick(int click) {
         this.click = click;
     }
 

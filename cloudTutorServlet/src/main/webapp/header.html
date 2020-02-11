@@ -28,6 +28,8 @@
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right">
+                            <li id="user">当前用户</li>
+                            <li><a href="javascript:location.href='/user/exit';">退出</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                     aria-haspopup="true" aria-expanded="false">个人空间<span class="caret"></span></a>
@@ -43,3 +45,11 @@
         </div>
     </div>
 </header>
+
+<script type="text/javascript">
+    $(function(){
+        $.get("/user/findUser", {}, function(data){
+            $("#user").html(data.name);
+        });
+    });
+</script>
