@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>家教招聘</title>
+
+    <link rel="icon" href="./image/brand.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./image/brand.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/offer.css"/>
+</head>
+
+<body>
+<div id="header"></div>
+
+<div class="search clearfix">
+    <div class="search-block clearfix">
+        <div class="search-title">学科</div>
+        <button class="search-button" id="everything">不限</button>
+        <button class="search-button" id="subjectMath">数学</button>
+        <button class="search-button" id="subjectEnglish">英语</button>
+        <button class="search-button" id="subjectChinese">语文</button>
+    </div>
+
+    <div class="search-block">
+        <div class="search-title">关键词</div>
+        <input type="text" class="search-input" id="keyWord" placeholder="搜索大学、经验、证书等要求">
+        <button class="input-button">搜索</button>
+    </div>
+</div>
+
+
+<div id="offerContent">
+    <div class="tutor">
+        <div class="tutor-line"></div>
+        <div class="tutor-time" id="time">2019-1-1</div>
+
+        <div class="tutor-job">
+            <div class="job-title">认证信息：</div>
+            <div class="job-content" id="certification">师范院校学生</div>
+        </div>
+        <div class="tutor-job">
+            <div class="job-title">性别：</div>
+            <div class="job-content" id="sex">男</div>
+        </div>
+        <div class="tutor-job">
+            <div class="job-title">具体要求：</div>
+            <div class="job-content" id="claim">英语基础扎实，有较强的英语思维</div>
+        </div>
+        <div class="tutor-job">
+            <div class="job-title">费用：</div>
+            <div class="job-content" id="fee">不限</div>
+        </div>
+        <div class="tutor-job">
+            <div class="job-title">地址：</div>
+            <div class="job-content" id="address">50~60/小时</div>
+        </div>
+
+        <button class="tutor-button" id="apply">点击应聘</button>
+    </div>
+</div>
+
+
+<div class="pageNum">
+    <ul id="pageNum">
+        <li><a href="">首页</a></li>
+        <li class="threeword"><a href="#">上一页</a></li>
+        <li class="curPage"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#">10</a></li>
+        <li class="threeword"><a href="javascript:;">下一页</a></li>
+        <li class="threeword"><a href="javascript:;">末页</a></li>
+    </ul>
+</div>
+
+
+<div id="footer"></div>
+
+</body>
+<script type="text/javascript" src="./js/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/jquery/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="./js/utils/include.js"></script>
+
+<script type="text/javascript" src="./js/offer.js"></script>
+
+</html>

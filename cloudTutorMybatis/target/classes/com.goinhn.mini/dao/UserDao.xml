@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.goinhn.mini.dao.UserDao">
+    <resultMap id="userMap" type="com.goinhn.mini.domain.User">
+        <id column="userId" property="userId"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="name" property="name"/>
+        <result column="birthday" property="birthday"/>
+        <result column="sex" property="sex"/>
+        <result column="telephone" property="telephone"/>
+        <result column="email" property="email"/>
+        <result column="type" property="type"/>
+        <result column="status" property="status"/>
+        <result column="code" property="code"/>
+    </resultMap>
+
+    <sql id="base_column_list">
+        userId, username, password, name, birthday, sex, telephone, email, type, status, code
+    </sql>
+
+    <select id="findAll" resultType="userMap">
+        select
+        <include refid="base_column_list"></include>
+        from tab_user
+    </select>
+
+    <select id="findByUserId" parameterType="Integer" resultType="userMap">
+        select
+        <include refid="base_column_list"></include>
+        from tab_user
+        <where>
+            <if test="userId != null and userId != ''">
+                and userId = #{userId, jdbcType=int}
+            </if>
+        </where>
+    </select>
+
+    <select id="findByUsername" parameterType="String" resultMap="userMap">
+        select
+        <include refid="base_column_list"></include>
+        from tab_user
+        <where>
+            <if test="username != null and username != ''">
+                and username = #{username, jdbcType=varchar}
+            </if>
+        </where>
+    </select>
+
+    <select id="findByUsernameAndPassword" parameterType="HashMap" resultMap="userMap">
+        select
+        <include refid="base_column_list"></include>
+        from tab_user
+        <where>
+            <if test="username != null and username != ''">
+                and username = #{username, jdbcType=varchar}
+            </if>
+            <if test="password != null and password != ''">
+                and password = #{password, jdbcType=varchar}
+            </if>
+        </where>
+    </select>
+
+    <select id="findByCode" parameterType="String" resultMap="userMap">
+        select
+        <include refid="base_column_list"></include>
+        from tab_user
+        <where>
+            <if test="code != null and code != ''">
+                and code = #{code, jdbcType=varchar}
+            </if>
+        </where>
+    </select>
+
+    <select id="findByName" parameterType="String" resultType="userMap">
+        select
+        <include refid="base_column_list"></include>
+        from tab_user
+        <if test="name != null and name != ''">
+            and name like #{name, jdbcType=varchar}
+        </if>
+    </select>
+
+    <select id="findTotal" resultType="int">
+        select count(*) from tab_user;
+    </select>
+
+
+    <insert id="saveUser" parameterType="userMap">
+        <selectKey keyColumn="userId" keyProperty="userId" order="AFTER" resultType="int">
+            select last_insert_id();
+        </selectKey>
+        insert into tab_user(username, password, name, birthday, sex, telephone, email, type, status, code)
+        values(#{username}, #{password}, #{name}, #{birthday}, #{sex}, #{telephone}, #{email}, #{type}, #{status},
+        #{code})
+    </insert>
+
+
+    <update id="updateUser" parameterType="userMap">
+        <selectKey keyColumn="userId" keyProperty="userId" order="AFTER" resultType="int">
+            select userId FROM tab_user WHERE userId = #{userId}
+        </selectKey>
+        update tab_user
+        set username = #{username},
+            password = #{password},
+            name = #{name},
+            birthday = #{birthday},
+            sex = #{sex},
+            telephone = #{telephone},
+            email = #{email},
+            type = #{type},
+            status = #{status},
+            code = #{code}
+        where userId = #{userId}
+    </update>
+
+    <update id="updateStatus" parameterType="userMap">
+        <selectKey keyColumn="userId" keyProperty="userId" order="AFTER" resultType="int">
+            select userId from tab_user where userId = #{userId}
+        </selectKey>
+        update teb_user set status = #{status} where userId = #{userId}
+    </update>
+
+
+    <delete id="deleteUser" parameterType="userMap">
+        delete from tab_user where userId = #{userId}
+    </delete>
+
+</mapper>

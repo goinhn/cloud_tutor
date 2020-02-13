@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cloudTutorServlet:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>cloudTutorServlet</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="cloudTutorServlet.war">
+      <element id="artifact" artifact-name="cloudTutorServlet:war exploded" />
+    </root>
+  </artifact>
+</component>

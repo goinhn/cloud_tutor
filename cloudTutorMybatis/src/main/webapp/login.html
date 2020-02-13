@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>登录</title>
+
+    <link rel="icon" href="./image/brand.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./image/brand.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="./css/login.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+
+    <section id="login_wrap">
+        <div class="fullscreen-bg" style="height: 532px;"></div>
+        <div class="login-box">
+            <div class="title">
+                <span>欢迎登录云家教</span>
+            </div>
+            <div class="login_inner">
+                <form id="loginForm" action="" method="post" accept-charset="utf-8">
+                    <input type="hidden" name="action" value="login" />
+                    <input name="username" type="text" placeholder="请输入账号" autocomplete="off">
+                    <input name="password" type="text" placeholder="请输入密码" autocomplete="off">
+                    <div class="verify">
+                        <input name="check" type="text" placeholder="请输入验证码" autocomplete="off">
+                        <span><img src="checkCode" alt="验证图片" id="checkImage"></span>
+                    </div>
+                    <div class="submit_btn">
+                        <button type="button" id="loginButton">登录</button>
+                        <div class="auto_login">
+                            <input type="checkbox" name="" class="checkbox">
+                            <span>自动登录</span>
+                        </div>
+                    </div>
+                </form>
+                <div class="reg">没有账户？<a href="register.html">立即注册</a></div>
+            </div>
+        </div>
+    </section>
+
+<div id="footer"></div>
+
+</body>
+<script type="text/javascript" src="./js/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery/jquery.cookie.js"></script>
+
+<script src="./js/utils/include.js"></script>
+
+<script src="./js/login.js"></script>
+
+</html>
